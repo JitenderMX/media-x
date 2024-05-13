@@ -42,11 +42,11 @@ Spacing System
     --th-color-Gray: #2f2f2f;
     --th-font-1: "Raleway", sans-serif;
     --th-font-2: "Helvetica Neue", sans-serif;
-    --th-h1-fs: 64px;
-    --th-h2-fs: 48px;
-    --th-h3-fs: 32px;
-    --th-h4-fs: 24px;
-    --th-p-fs: 20px;
+    --th-h1-fs: 120px;
+    --th-h2-fs: 64px;
+    --th-h3-fs: 48px;
+    --th-h4-fs: 32px;
+    --th-p-fs: 24px;
     --th-link-fs: 18px;
 }
 
@@ -82,6 +82,11 @@ h3 {
     font-weight: 500;
 }
 
+h4 {
+    font-size: var(--th-h4-fs);
+    font-weight: 500;
+}
+
 h6 {
     font-family: var(--th-font-1);
     font-size: var(--th-link-fs);
@@ -92,7 +97,7 @@ h6 {
 }
 
 p {
-    font-size: var(--th-p-fs);
+    font-size: var(--th-link-fs);
     font-family: var(--th-font-1);
     font-weight: 400;
 }
@@ -780,8 +785,8 @@ main {
     padding: 30px;
 }
 
-.footer-main h2,
-.footer-main h3 {
+.footer-main h3,
+.footer-main h4 {
     color: #000;
     font-family: var(--th-font-2);
     font-weight: 700;
@@ -799,6 +804,8 @@ main {
 }
 
 .footer-main .footer-top a {
+    font-size: var(--th-link-fs);
+    font-family: var(--th-font-2);
     text-decoration: .5px underline;
 }
 
@@ -1117,21 +1124,24 @@ main {
 /* ------------- Our Solution Section End ------------- */
 
 /* 22. Our Work Section Start ------------- */
-.our-work{
+.our-work {
     padding-bottom: 80px;
 }
-.our-work .main-h{
+
+.our-work .main-h {
     margin-bottom: 30px !important;
 }
-.ouw-box{
+
+.ouw-box {
     /* border: 1px solid var(--th-color-2); */
     height: 650px;
-    box-shadow:0px 0px 0px 1px var(--th-color-2) inset;
-margin-bottom: 40px;    
-position: relative;
-overflow: hidden;
-transition: all .5s;
+    box-shadow: 0px 0px 0px 1px var(--th-color-2) inset;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
 }
+
 /* .ouw-box::after{
     content: " ";
     width: 0;
@@ -1142,19 +1152,22 @@ transition: all .5s;
     right: 0;
     top: 0;
 } */
-.ouw-h{
-    padding: 20px ;
+.ouw-h {
+    padding: 20px;
     transition: all .5s;
 }
-.ouw-h h3{
+
+.ouw-h h3 {
     margin: 0;
     transition: all .5s;
 }
-.ouw-img{
+
+.ouw-img {
     margin-bottom: 20px;
     position: relative;
     transition: all .5s;
 }
+
 /* .ouw-img::after{
     content: " ";
     width: 0;
@@ -1165,69 +1178,82 @@ transition: all .5s;
     right: 0;
     top: 0;
 } */
-.ouw-img img{
+.ouw-img img {
     width: 100%;
     height: 617px;
     object-fit: cover;
     transition: all .5s;
 }
-.ouw-text .th-arrow-btn .btn-text{
+
+.ouw-text .th-arrow-btn .btn-text {
     font-weight: 700 !important;
 }
-.ouw-box:hover{
+
+.ouw-box:hover {
     padding: 50px;
 }
-.ouw-box:hover .ouw-h{
-    padding:0px 0px 20px 0px;
+
+.ouw-box:hover .ouw-h {
+    padding: 0px 0px 20px 0px;
 }
-.ouw-box:hover .ouw-h h3{
+
+.ouw-box:hover .ouw-h h3 {
     color: var(--th-color-2);
-font-size: var(--th-h2-fs);
-font-weight: 700;
-line-height: 112.5%; /* 72px */
-letter-spacing: 3.84px;
+    font-size: var(--th-h2-fs);
+    font-weight: 700;
+    line-height: 112.5%;
+    /* 72px */
+    letter-spacing: 3.84px;
 }
-.ouw-box:hover .ouw-img img{
-  height: 275px;
+
+.ouw-box:hover .ouw-img img {
+    height: 275px;
 }
+
 /* ------------- Our Work Section End ------------- */
 
 /* 23. We Also do Section Start ------------- */
-.we-also-do{
+.we-also-do {
     padding: 80px 0px;
 }
-.wead-box{
+
+.wead-box {
     position: relative;
     perspective: 1000px;
 }
-.wead-box .wead-img{
+
+.wead-box .wead-img {
     transform-style: preserve-3d;
     transform: rotateY(180deg);
-    transition: transform .7s cubic-bezier(.4,.2,.2,1);
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
 }
-.wead-box .wead-text{
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 10;
-   background: var(--th-color-3);
-   width: 100%;
-   height: 100%;
-   padding: 40px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   border: 1px solid var(--th-color-2);
-   transform-style: preserve-3d;
-   backface-visibility: hidden;
-   transition: transform .7s cubic-bezier(.4,.2,.2,1);
+
+.wead-box .wead-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: var(--th-color-3);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--th-color-2);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
 }
-.wead-box:hover  .wead-img{
+
+.wead-box:hover .wead-img {
     transform: rotateY(0deg);
-  }
-  .wead-box:hover .wead-text{
+}
+
+.wead-box:hover .wead-text {
     transform: rotateY(-180deg);
-  }
+}
+
 /* ------------- We Also do Section End ------------- */
 
 /* 24. Testimonial Section Start ------------- */
@@ -1240,12 +1266,13 @@ letter-spacing: 3.84px;
 
 }
 
-.testimonial-container{
+.testimonial-container {
     display: flex;
     border: 1px solid var(--th-color-2);
     transition: all .5s;
 }
-.test-head{
+
+.test-head {
     width: 100%;
     transform: rotate(-180deg);
     height: 100%;
@@ -1262,18 +1289,22 @@ letter-spacing: 3.84px;
     align-items: center;
     /*transition: all .5s;*/
 }
+
 .tes-box.open {
     width: 60% !important;
- }
- .tes-box.open .test-head{
+}
+
+.tes-box.open .test-head {
     opacity: 0;
     visibility: hidden;
     user-select: none;
- }
- .tes-box.close .test-head{
+}
+
+.tes-box.close .test-head {
     border-right: 1px solid var(--th-color-Gray);
- }
- .test-head h3{
+}
+
+.test-head h3 {
     color: var(--th-color-2);
     font-family: var(--th-font-2);
     font-size: var(--th-h3-fs);
@@ -1282,7 +1313,8 @@ letter-spacing: 3.84px;
     font-weight: 600;
     margin: 0;
 }
-.tes-box .test-content{
+
+.tes-box .test-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1292,53 +1324,368 @@ letter-spacing: 3.84px;
     margin: auto;
     transition: all .5s;
 }
-.tes-box .test-name{
-   min-width: 80%;
-   padding: 10px 0px;
+
+.tes-box .test-name {
+    min-width: 80%;
+    padding: 10px 0px;
 }
-.tes-box .test-name
-{
-   max-width: 80%;
+
+.tes-box .test-name {
+    max-width: 80%;
 }
-.tes-box{
+
+.tes-box {
     width: 60%;
 }
-.tes-box .test-p{
+
+.tes-box .test-p {
     max-width: 70%;
     text-align: center;
 }
+
 /* ------------- Testimonial Section End ------------- */
 
 /* 25. Work with us Section Start ------------- */
-.work-with{
+.work-with {
     padding: 100px 0px;
 }
+
 .work-with .th-arrow-btn:hover .btn-arrow {
     transform: translateX(175px);
 }
-.work-with .col-md-6.d-flex p{
+
+.work-with .col-md-6.d-flex p {
     margin: 0;
     max-width: 480px;
 }
-.wow-box{
+
+.wow-box {
     padding: 50px;
     border: 1px solid var(--th-color-Gray);
     transition: all .5s;
 }
-.wow-box:hover{
+
+.wow-box:hover {
     background-color: var(--th-color-1);
 }
-.wow-box h2{
+
+.wow-box h2 {
     font-weight: 300;
     text-transform: capitalize;
     transition: all .5s;
 }
-.wow-box p{
+
+.wow-box p {
     transition: all .5s;
 }
+
 .wow-box:hover h2,
 .wow-box:hover p,
-.wow-box:hover .th-arrow-btn .btn-text{
+.wow-box:hover .th-arrow-btn .btn-text {
     color: var(--th-color-3);
 }
+
 /* ------------- Work with us Section End ------------- */
+
+/* 26. About Hero Section Start ------------- */
+.about-hero {
+    padding: 0px 0px 80px 0px;
+}
+
+.about-hero .abh-marqee-text {
+    display: flex;
+    gap: 100px;
+}
+
+.about-hero .abh-marqee-text h1 {
+    font-size: calc(var(--th-h1-fs)*1.5);
+    font-family: var(--th-font-2);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134%;
+    /* 160.8px */
+}
+
+.about-hero .abh-marqee-text h1 .red {
+    color: var(--th-color-1);
+}
+
+/* ------------- About Hero Section End ------------- */
+
+/* 27.Team Section Start ------------- */
+.team {
+    padding: 80px 0px 150px;
+}
+
+.team .red-line {
+    position: relative;
+}
+
+.team .red-line::before {
+    content: ' ';
+    background-color: var(--th-color-1);
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+.team-box {
+    margin-top: 50px;
+}
+
+.te-box {
+    position: relative;
+}
+
+.col-xl-2:nth-child(even) .te-box {
+    transform: translateY(50%);
+}
+
+/* .te-img {} */
+
+.te-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--th-color-3);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--th-color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    user-select: none;
+    transition: all .5s;
+}
+
+.te-box:hover .te-text {
+    transform: rotate(45deg) translateY(100px);
+    transform-origin: left bottom;
+    background-color: var(--th-color-1);
+    border: 1px solid var(--th-color-1);
+}
+
+.te-title {
+    color: var(--th-color-2);
+    font-family: var(--th-font-2);
+    font-size: var(--th-h4-fs);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    transition: all .5s;
+}
+
+.te-box:hover .te-title {
+    color: var(--th-color-3);
+}
+
+.te-pera {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-link-fs);
+    font-style: normal;
+    font-weight: 300;
+    transition: all .5s;
+}
+
+.te-box:hover .te-pera {
+    color: var(--th-color-3);
+}
+
+/* ------------- Team Section End ------------- */
+
+/* 28.Partners Section Start ------------- */
+.partner {
+    padding: 80px 0px;
+}
+
+.partner-slider {
+    margin-top: 50px;
+}
+
+.partner-slider p {
+    max-width: 400px;
+    margin: auto;
+}
+
+.partner-slider .slick-dots li button:before {
+    font-size: var(--th-link-fs);
+    margin-top: 30px;
+}
+
+.partner-slider .slick-dots li button:hover:before {
+    color: var(--th-color-1);
+}
+
+.partner-slider .slick-dots li.slick-active button:before {
+    color: var(--th-color-1);
+}
+
+.par-box {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.par-box::after,
+.par-box::before {
+    content: ' ';
+    background-color: var(--th-color-Gray);
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+}
+
+.par-box::after {
+    top: 0;
+}
+
+.par-box::before {
+    bottom: 0;
+}
+
+.par-box:hover:after,
+.par-box:hover:before {
+    width: 100%;
+}
+
+/* ------------- Partners Section End ------------- */
+
+
+/* 29.Our Belife Section Start ------------- */
+.our-belifes {
+    padding: 80px 0px;
+    transition: all .5s;
+}
+
+.our-belifes * {
+    transition: all .5s;
+}
+
+.our-belifes:hover h2,
+.our-belifes:hover h5,
+.our-belifes:hover p,
+.our-belifes:hover .th-arrow-btn .btn-text {
+    color: var(--th-color-3);
+}
+
+.our-belifes:hover {
+    background-color: var(--th-color-2);
+}
+
+.our-belifes .th-arrow-btn:hover .btn-arrow {
+    transform: translateX(175px);
+}
+
+.oub-right {
+    padding-bottom: 100px;
+}
+
+.oub-box {
+    border: 1px solid var(--th-color-Gray);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transition: all .5s;
+}
+
+.oub-box h5 {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129%;
+    /* 30.96px */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.oub-box p {
+    margin: 0;
+}
+
+.oub-box-1,
+.oub-box-3 {
+    top: 40%;
+}
+
+.our-belifes:hover .oub-box-1,
+.our-belifes:hover .oub-box-3 {
+    top: 35%;
+}
+
+.our-belifes:hover .oub-box-2,
+.our-belifes:hover .oub-box-4 {
+    top: 10%;
+}
+
+/* ------------- Our Belife Section End ------------- */
+
+
+/* 30.Glimpse Section Start ------------- */
+.glimpse {
+    padding: 80px 0px;
+}
+
+.gli-img-container {
+    overflow: hidden;
+}
+
+.gli-img-box {
+    display: flex;
+    align-items: center;
+    width: 2100px;
+    position: relative;
+    transform: translateX(700px);
+    transition: all .5s;
+}
+
+.glimg {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    /* transform: scale(.95); */
+    transition: all .5s;
+}
+
+
+.glimg img {
+    filter: grayscale(1);
+    transition: all .5s;
+}
+.glimg.active{
+    transform: scale(1.2);
+    z-index: 10;
+
+}
+.glimg.active img {
+    filter: grayscale(0);
+}
+.glimg-text{
+    height: 100px;
+    position: relative;
+}
+.glimg-text p{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ------------- Glimpse Section End ------------- */
