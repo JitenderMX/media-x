@@ -32,7 +32,7 @@ Spacing System
 /* ------------- Google Font End ------------- */
 
 
-/* 02.base Start ------------------------------ */
+/* 02.Base Start ------------------------------ */
 
 :root {
     --th-color-1: #E12726;
@@ -87,6 +87,10 @@ h4 {
     font-weight: 500;
 }
 
+h4 .red {
+    color: var(--th-color-1);
+}
+
 h6 {
     font-family: var(--th-font-1);
     font-size: var(--th-link-fs);
@@ -133,7 +137,7 @@ main {
     margin-top: 87px;
 }
 
-/* ------------- base End ------------- */
+/* ------------- Base End ------------- */
 
 
 /* 03. Header Section Start ------------------------------ */
@@ -378,8 +382,12 @@ main {
 }
 
 .th-arrow-btn .btn-arrow {
+    max-width: 44px;
     padding: 0;
     transition: all .5s;
+}
+.th-arrow-btn .btn-arrow img{
+ width: 100%;
 }
 
 .th-arrow-btn:hover .btn-arrow {
@@ -1668,19 +1676,23 @@ main {
     filter: grayscale(1);
     transition: all .5s;
 }
-.glimg.active{
+
+.glimg.active {
     transform: scale(1.2);
     z-index: 10;
 
 }
+
 .glimg.active img {
     filter: grayscale(0);
 }
-.glimg-text{
+
+.glimg-text {
     height: 100px;
     position: relative;
 }
-.glimg-text p{
+
+.glimg-text p {
     width: 80%;
     position: absolute;
     top: 0;
@@ -1689,3 +1701,66 @@ main {
 }
 
 /* ------------- Glimpse Section End ------------- */
+
+
+
+/* ------------Case Study Page =================------------ */
+
+/* 31.Case Hero Section Start ------------- */
+.case-hero {
+    padding-top: 80px;
+}
+
+.case-hero h2 {
+    line-height: 100%;
+}
+
+.case-hero p {
+    font-family: var(--th-font-1);
+    font-size: var(--th-h4-fs);
+    font-weight: 300;
+    line-height: calc(var(--th-h4-fs)*1.5);
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin: 0;
+}
+
+.case-hero .cah-right p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.case-hero .tag {
+    border-radius: 2px;
+}
+.case-about{
+    padding: 40px 0px;
+}
+.case-visual-identity{
+    padding: 100px 0px 50px 0px;
+}
+.case-visual-identity .cavi-img{
+   width: 135px;
+   max-width: 135px;
+}
+.case-visual-identity .cavi-img img{
+   width: 100%;
+}
+.case-study-website{
+    padding: 80px 0px;
+}
+.case-study-website .th-arrow-btn:hover .btn-arrow {
+    transform: translateX(-100px);
+}
+.case-study-website .th-arrow-btn:hover .btn-text {
+    transform: translateX(70px);
+}
+.casw-text-bottom{
+    border-bottom: 1px solid var(--th-color-2);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.case-study-project{
+    padding-top: 80px;
+}
+/* ------------- Case Hero Section End ------------- */
