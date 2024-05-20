@@ -1790,6 +1790,14 @@ main {
 .cons-b-box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 150px 0px;
+}
+.cons-b-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 150px 0px;
 }
@@ -1830,8 +1838,25 @@ main {
 .small-heading .cons-b{
     max-width: 220px;
 }
+.input-box .cons-b{
+    max-width: 600px;
+    min-width: 500px;
+}
 .small-heading .cons-b label {
     padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .cons-b input {
+    color: #C6C6C6;
+    padding: 40px 30px;
+    width: 100%;
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.05%; /* 33.852px */
 }
 
 .cons-b-list .cons-b ul {
