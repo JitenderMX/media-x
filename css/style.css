@@ -1810,12 +1810,14 @@ main {
 .cons-b p {
     transition: all .5s;
 }
-
+.cons-b.active,
 .cons-b:hover {
     background-color: var(--th-color-2);
     color: var(--th-color-3);
 }
-
+.cons-b.active h3,
+.cons-b.active h5,
+.cons-b.active p,
 .cons-b:hover h3,
 .cons-b:hover h5,
 .cons-b:hover p {
