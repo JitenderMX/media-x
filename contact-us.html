@@ -44,7 +44,7 @@
         <!-- Contact Section Start -->
         <section class="contact">
             <div class="container-xxl">
-                <form action="submit_form.php" method="post">
+                <form action="submit_form.php" id="contact_Form" method="post">
                     <div class="contact-slider">
                         <div class="px-4 cons-1 looking-for">
                             <div class="cons-top-container">
@@ -59,8 +59,10 @@
                                 </div>
                             </div>
                             <div class="cons-bottom-container">
-                                <input name="cons-1" type="radio" value="start-a-new-project" id="start-a-new-project">
-                                <input name="cons-1" type="radio" value="join-your-team" id="join-your-team">
+                                <input name="cons-1" type="radio" class="opacity-0" value="start-a-new-project"
+                                    id="start-a-new-project">
+                                <input name="cons-1" type="radio" class="opacity-0" value="join-your-team"
+                                    id="join-your-team">
                                 <div class="cons-b-box">
                                     <div class="cons-b">
                                         <label for="start-a-new-project">
@@ -92,8 +94,10 @@
                                 </div>
                             </div>
                             <div class="cons-bottom-container">
-                                <input name="cons-2" type="radio" value="Retained support" id="retained-support">
-                                <input name="cons-2" type="radio" value="One time project" id="one-time-project">
+                                <input name="cons-2" type="radio" class="opacity-0" value="Retained support"
+                                    id="retained-support">
+                                <input name="cons-2" type="radio" class="opacity-0" value="One time project"
+                                    id="one-time-project">
                                 <div class="cons-b-box cons-b-list">
                                     <div class="cons-b">
                                         <label for="retained-support" class="h-100">
@@ -164,9 +168,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="retained-support" type="radio" value="Marketing & outreach" id="rs-mno">
-                            <input name="retained-support" type="radio" value="Website Maintenance" id="rs-wm">
-                            <input name="retained-support" type="radio" value="Media Solutions" id="rs-ms">
+                            <input name="retained-support" type="radio" class="opacity-0" value="Marketing & outreach"
+                                id="rs-mno">
+                            <input name="retained-support" type="radio" class="opacity-0" value="Website Maintenance"
+                                id="rs-wm">
+                            <input name="retained-support" type="radio" class="opacity-0" value="Media Solutions"
+                                id="rs-ms">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="rs-mno" class="h-100">
@@ -199,11 +206,16 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno" type="radio" value="Social Media Marketing" id="rs-mno-smm">
-                            <input name="resu-mno" type="radio" value="Online Reputation Management" id="rs-mno-orm">
-                            <input name="resu-mno" type="radio" value="Search Engine Optimisation" id="rs-mno-sem">
-                            <input name="resu-mno" type="radio" value="Influencer Marketing" id="rs-mno-im">
-                            <input name="resu-mno" type="radio" value="WhatsApp Marketing" id="rs-mno-wm">
+                            <input name="resu-mno" type="radio" class="opacity-0" value="Social Media Marketing"
+                                id="rs-mno-smm">
+                            <input name="resu-mno" type="radio" class="opacity-0" value="Online Reputation Management"
+                                id="rs-mno-orm">
+                            <input name="resu-mno" type="radio" class="opacity-0" value="Search Engine Optimisation"
+                                id="rs-mno-sem">
+                            <input name="resu-mno" type="radio" class="opacity-0" value="Influencer Marketing"
+                                id="rs-mno-im">
+                            <input name="resu-mno" type="radio" class="opacity-0" value="WhatsApp Marketing"
+                                id="rs-mno-wm">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="rs-mno-smm" class="h-100">
@@ -246,9 +258,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-wm-bug" type="radio" value="INR 20K - 40K" id="resu-wm-bug-1">
-                            <input name="resu-wm-bug" type="radio" value="INR 40K - 80k" id="resu-wm-bug-2">
-                            <input name="resu-wm-bug" type="radio" value="INR 80k +" id="resu-wm-bug-3">
+                            <input name="resu-wm-bug" type="radio" class="opacity-0" value="INR 20K - 40K"
+                                id="resu-wm-bug-1">
+                            <input name="resu-wm-bug" type="radio" class="opacity-0" value="INR 40K - 80k"
+                                id="resu-wm-bug-2">
+                            <input name="resu-wm-bug" type="radio" class="opacity-0" value="INR 80k +"
+                                id="resu-wm-bug-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-wm-bug-1" class="h-100">
@@ -281,13 +296,18 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms" type="radio" value="Sales Campaign" id="resu-ms-sc">
-                            <input name="resu-ms" type="radio" value="Brand Awareness" id="resu-ms-ba">
-                            <input name="resu-ms" type="radio" value="Lead Generation" id="resu-ms-lg">
-                            <input name="resu-ms" type="radio" value="Conversion Rate Optimisation" id="resu-ms-cro">
-                            <input name="resu-ms" type="radio" value="Press Release" id="resu-ms-pr">
-                            <input name="resu-ms" type="radio" value="Editorial Articles" id="resu-ms-ea">
-                            <input name="resu-ms" type="radio" value="Authored Articles" id="resu-ms-aa">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Sales Campaign" id="resu-ms-sc">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Brand Awareness"
+                                id="resu-ms-ba">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Lead Generation"
+                                id="resu-ms-lg">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Conversion Rate Optimisation"
+                                id="resu-ms-cro">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Press Release" id="resu-ms-pr">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Editorial Articles"
+                                id="resu-ms-ea">
+                            <input name="resu-ms" type="radio" class="opacity-0" value="Authored Articles"
+                                id="resu-ms-aa">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-sc" class="h-100">
@@ -340,9 +360,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno-smm" type="radio" value="INR 30K - 50K" id="resu-mno-smm-1">
-                            <input name="resu-mno-smm" type="radio" value="INR 50K - 1L" id="resu-mno-smm-2">
-                            <input name="resu-mno-smm" type="radio" value="1 Lakh +" id="resu-mno-smm-3">
+                            <input name="resu-mno-smm" type="radio" class="opacity-0" value="INR 30K - 50K"
+                                id="resu-mno-smm-1">
+                            <input name="resu-mno-smm" type="radio" class="opacity-0" value="INR 50K - 1L"
+                                id="resu-mno-smm-2">
+                            <input name="resu-mno-smm" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="resu-mno-smm-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-mno-smm-1" class="h-100">
@@ -375,9 +398,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno-orm" type="radio" value="INR 30K - 50K" id="resu-mno-orm-1">
-                            <input name="resu-mno-orm" type="radio" value="INR 50K - 1L" id="resu-mno-orm-2">
-                            <input name="resu-mno-orm" type="radio" value="1 Lakh +" id="resu-mno-orm-3">
+                            <input name="resu-mno-orm" type="radio" class="opacity-0" value="INR 30K - 50K"
+                                id="resu-mno-orm-1">
+                            <input name="resu-mno-orm" type="radio" class="opacity-0" value="INR 50K - 1L"
+                                id="resu-mno-orm-2">
+                            <input name="resu-mno-orm" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="resu-mno-orm-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-mno-orm-1" class="h-100">
@@ -410,9 +436,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno-seo" type="radio" value="INR 50K - 75K" id="resu-mno-seo-1">
-                            <input name="resu-mno-seo" type="radio" value="INR 75K - 1.5L" id="resu-mno-seo-2">
-                            <input name="resu-mno-seo" type="radio" value="1.5 Lakh +" id="resu-mno-seo-3">
+                            <input name="resu-mno-seo" type="radio" class="opacity-0" value="INR 50K - 75K"
+                                id="resu-mno-seo-1">
+                            <input name="resu-mno-seo" type="radio" class="opacity-0" value="INR 75K - 1.5L"
+                                id="resu-mno-seo-2">
+                            <input name="resu-mno-seo" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="resu-mno-seo-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-mno-seo-1" class="h-100">
@@ -445,9 +474,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno-im" type="radio" value="INR 30K - 50K" id="resu-mno-im-1">
-                            <input name="resu-mno-im" type="radio" value="INR 50K - 1L" id="resu-mno-im-2">
-                            <input name="resu-mno-im" type="radio" value="1 Lakh +" id="resu-mno-im-3">
+                            <input name="resu-mno-im" type="radio" class="opacity-0" value="INR 30K - 50K"
+                                id="resu-mno-im-1">
+                            <input name="resu-mno-im" type="radio" class="opacity-0" value="INR 50K - 1L"
+                                id="resu-mno-im-2">
+                            <input name="resu-mno-im" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="resu-mno-im-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-mno-im-1" class="h-100">
@@ -480,9 +512,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-mno-wm" type="radio" value="INR 40K - 60K" id="resu-mno-wm-1">
-                            <input name="resu-mno-wm" type="radio" value="INR 60K - 1L" id="resu-mno-wm-2">
-                            <input name="resu-mno-wm" type="radio" value="1 Lakh +" id="resu-mno-wm-3">
+                            <input name="resu-mno-wm" type="radio" class="opacity-0" value="INR 40K - 60K"
+                                id="resu-mno-wm-1">
+                            <input name="resu-mno-wm" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="resu-mno-wm-2">
+                            <input name="resu-mno-wm" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="resu-mno-wm-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-mno-wm-1" class="h-100">
@@ -515,9 +550,11 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-sc" type="radio" value="INR 40K - 60K" id="resu-ms-sc-1">
-                            <input name="resu-ms-sc" type="radio" value="INR 60K - 1L" id="resu-ms-sc-2">
-                            <input name="resu-ms-sc" type="radio" value="1 Lakh +" id="resu-ms-sc-3">
+                            <input name="resu-ms-sc" type="radio" class="opacity-0" value="INR 40K - 60K"
+                                id="resu-ms-sc-1">
+                            <input name="resu-ms-sc" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="resu-ms-sc-2">
+                            <input name="resu-ms-sc" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-sc-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-sc-1" class="h-100">
@@ -550,9 +587,11 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-ba" type="radio" value="INR 40K - 60K" id="resu-ms-ba-1">
-                            <input name="resu-ms-ba" type="radio" value="INR 60K - 1L" id="resu-ms-ba-2">
-                            <input name="resu-ms-ba" type="radio" value="1 Lakh +" id="resu-ms-ba-3">
+                            <input name="resu-ms-ba" type="radio" class="opacity-0" value="INR 40K - 60K"
+                                id="resu-ms-ba-1">
+                            <input name="resu-ms-ba" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="resu-ms-ba-2">
+                            <input name="resu-ms-ba" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-ba-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-ba-1" class="h-100">
@@ -585,10 +624,13 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-lg" type="radio" value="INR 20K - 50K" id="resu-ms-lg-1">
-                            <input name="resu-ms-lg" type="radio" value="INR 50K - 75k" id="resu-ms-lg-2">
-                            <input name="resu-ms-lg" type="radio" value="INR 75K - 1L" id="resu-ms-lg-3">
-                            <input name="resu-ms-lg" type="radio" value="1 Lakh +" id="resu-ms-lg-4">
+                            <input name="resu-ms-lg" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="resu-ms-lg-1">
+                            <input name="resu-ms-lg" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="resu-ms-lg-2">
+                            <input name="resu-ms-lg" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="resu-ms-lg-3">
+                            <input name="resu-ms-lg" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-lg-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-lg-1" class="h-100">
@@ -626,10 +668,13 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-pr" type="radio" value="INR 20K - 50K" id="resu-ms-pr-1">
-                            <input name="resu-ms-pr" type="radio" value="INR 50K - 75k" id="resu-ms-pr-2">
-                            <input name="resu-ms-pr" type="radio" value="INR 75K - 1L" id="resu-ms-pr-3">
-                            <input name="resu-ms-pr" type="radio" value="1 Lakh +" id="resu-ms-pr-4">
+                            <input name="resu-ms-pr" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="resu-ms-pr-1">
+                            <input name="resu-ms-pr" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="resu-ms-pr-2">
+                            <input name="resu-ms-pr" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="resu-ms-pr-3">
+                            <input name="resu-ms-pr" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-pr-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-pr-1" class="h-100">
@@ -667,10 +712,13 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-ea" type="radio" value="INR 20K - 50K" id="resu-ms-ea-1">
-                            <input name="resu-ms-ea" type="radio" value="INR 50K - 75k" id="resu-ms-ea-2">
-                            <input name="resu-ms-ea" type="radio" value="INR 75K - 1L" id="resu-ms-ea-3">
-                            <input name="resu-ms-ea" type="radio" value="1 Lakh +" id="resu-ms-ea-4">
+                            <input name="resu-ms-ea" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="resu-ms-ea-1">
+                            <input name="resu-ms-ea" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="resu-ms-ea-2">
+                            <input name="resu-ms-ea" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="resu-ms-ea-3">
+                            <input name="resu-ms-ea" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-ea-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-ea-1" class="h-100">
@@ -708,10 +756,13 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="resu-ms-aa" type="radio" value="INR 20K - 50K" id="resu-ms-aa-1">
-                            <input name="resu-ms-aa" type="radio" value="INR 50K - 75k" id="resu-ms-aa-2">
-                            <input name="resu-ms-aa" type="radio" value="INR 75K - 1L" id="resu-ms-aa-3">
-                            <input name="resu-ms-aa" type="radio" value="1 Lakh +" id="resu-ms-aa-4">
+                            <input name="resu-ms-aa" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="resu-ms-aa-1">
+                            <input name="resu-ms-aa" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="resu-ms-aa-2">
+                            <input name="resu-ms-aa" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="resu-ms-aa-3">
+                            <input name="resu-ms-aa" type="radio" class="opacity-0" value="1 Lakh +" id="resu-ms-aa-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="resu-ms-aa-1" class="h-100">
@@ -749,12 +800,15 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="one-time-project" type="radio" value="Marketing & outreach" id="otp-1">
-                            <input name="one-time-project" type="radio" value="Film & Photography" id="otp-2">
-                            <input name="one-time-project" type="radio" value="Web & AR" id="otp-3">
-                            <input name="one-time-project" type="radio" value="Out of Home" id="otp-4">
-                            <input name="one-time-project" type="radio" value="Branding" id="otp-5">
-                            <input name="one-time-project" type="radio" value="Creative" id="otp-6">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Marketing & outreach"
+                                id="otp-1">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Film & Photography"
+                                id="otp-2">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Web & AR" id="otp-3">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Out of Home"
+                                id="otp-4">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Branding" id="otp-5">
+                            <input name="one-time-project" type="radio" class="opacity-0" value="Creative" id="otp-6">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="otp-1" class="h-100">
@@ -802,14 +856,18 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno" type="radio" value="Evergreen Strategy Development"
-                                id="ontipr-mno-1">
-                            <input name="ontipr-mno" type="radio" value="Campaign Strategy Development"
-                                id="ontipr-mno-2">
-                            <input name="ontipr-mno" type="radio" value="Influencer Campaign" id="ontipr-mno-3">
-                            <input name="ontipr-mno" type="radio" value="Inter Brand Collaboration" id="ontipr-mno-4">
-                            <input name="ontipr-mno" type="radio" value="WhatsApp Marketing" id="ontipr-mno-5">
-                            <input name="ontipr-mno" type="radio" value="Regional Marketing" id="ontipr-mno-6">
+                            <input name="ontipr-mno" type="radio" class="opacity-0"
+                                value="Evergreen Strategy Development" id="ontipr-mno-1">
+                            <input name="ontipr-mno" type="radio" class="opacity-0"
+                                value="Campaign Strategy Development" id="ontipr-mno-2">
+                            <input name="ontipr-mno" type="radio" class="opacity-0" value="Influencer Campaign"
+                                id="ontipr-mno-3">
+                            <input name="ontipr-mno" type="radio" class="opacity-0" value="Inter Brand Collaboration"
+                                id="ontipr-mno-4">
+                            <input name="ontipr-mno" type="radio" class="opacity-0" value="WhatsApp Marketing"
+                                id="ontipr-mno-5">
+                            <input name="ontipr-mno" type="radio" class="opacity-0" value="Regional Marketing"
+                                id="ontipr-mno-6">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-1" class="h-100">
@@ -857,13 +915,20 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp" type="radio" value="Product Photography" id="ontipr-fnp-1">
-                            <input name="ontipr-fnp" type="radio" value="Corporate Videos" id="ontipr-fnp-2">
-                            <input name="ontipr-fnp" type="radio" value="E-commerce Photography" id="ontipr-fnp-3">
-                            <input name="ontipr-fnp" type="radio" value="Explainer Videos" id="ontipr-fnp-4">
-                            <input name="ontipr-fnp" type="radio" value="Reel Production" id="ontipr-fnp-5">
-                            <input name="ontipr-fnp" type="radio" value="Showreel Creation" id="ontipr-fnp-6">
-                            <input name="ontipr-fnp" type="radio" value="Amazon Video Ads" id="ontipr-fnp-7">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Product Photography"
+                                id="ontipr-fnp-1">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Corporate Videos"
+                                id="ontipr-fnp-2">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="E-commerce Photography"
+                                id="ontipr-fnp-3">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Explainer Videos"
+                                id="ontipr-fnp-4">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Reel Production"
+                                id="ontipr-fnp-5">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Showreel Creation"
+                                id="ontipr-fnp-6">
+                            <input name="ontipr-fnp" type="radio" class="opacity-0" value="Amazon Video Ads"
+                                id="ontipr-fnp-7">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-1" class="h-100">
@@ -916,14 +981,18 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna" type="radio" value="Shopify Delevopment" id="ontipr-wna-1">
-                            <input name="ontipr-wna" type="radio" value="Informational Website Development"
-                                id="ontipr-wna-2">
-                            <input name="ontipr-wna" type="radio" value="Landing Page Development" id="ontipr-wna-3">
-                            <input name="ontipr-wna" type="radio" value="Conversion Rate Optimisation"
+                            <input name="ontipr-wna" type="radio" class="opacity-0" value="Shopify Delevopment"
+                                id="ontipr-wna-1">
+                            <input name="ontipr-wna" type="radio" class="opacity-0"
+                                value="Informational Website Development" id="ontipr-wna-2">
+                            <input name="ontipr-wna" type="radio" class="opacity-0" value="Landing Page Development"
+                                id="ontipr-wna-3">
+                            <input name="ontipr-wna" type="radio" class="opacity-0" value="Conversion Rate Optimisation"
                                 id="ontipr-wna-4">
-                            <input name="ontipr-wna" type="radio" value="User Interface Creation" id="ontipr-wna-5">
-                            <input name="ontipr-wna" type="radio" value="AI Filters" id="ontipr-wna-6">
+                            <input name="ontipr-wna" type="radio" class="opacity-0" value="User Interface Creation"
+                                id="ontipr-wna-5">
+                            <input name="ontipr-wna" type="radio" class="opacity-0" value="AI Filters"
+                                id="ontipr-wna-6">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-1" class="h-100">
@@ -1050,9 +1119,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno-esd" type="radio" value="INR 40K - 60K" id="ontipr-mno-esd-1">
-                            <input name="ontipr-mno-esd" type="radio" value="INR 60K - 1L" id="ontipr-mno-esd-2">
-                            <input name="ontipr-mno-esd" type="radio" value="1 Lakh +" id="ontipr-mno-esd-3">
+                            <input name="ontipr-mno-esd" type="radio" class="opacity-0" value="INR 40K - 60K"
+                                id="ontipr-mno-esd-1">
+                            <input name="ontipr-mno-esd" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-mno-esd-2">
+                            <input name="ontipr-mno-esd" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-mno-esd-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-esd-1" class="h-100">
@@ -1085,9 +1157,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno-csd" type="radio" value="INR 40K - 60K" id="ontipr-mno-csd-1">
-                            <input name="ontipr-mno-csd" type="radio" value="INR 60K - 1L" id="ontipr-mno-csd-2">
-                            <input name="ontipr-mno-csd" type="radio" value="1 Lakh +" id="ontipr-mno-csd-3">
+                            <input name="ontipr-mno-csd" type="radio" class="opacity-0" value="INR 40K - 60K"
+                                id="ontipr-mno-csd-1">
+                            <input name="ontipr-mno-csd" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-mno-csd-2">
+                            <input name="ontipr-mno-csd" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-mno-csd-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-csd-1" class="h-100">
@@ -1120,10 +1195,14 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno-ibc" type="radio" value="INR 20K - 50K" id="ontipr-mno-ibc-1">
-                            <input name="ontipr-mno-ibc" type="radio" value="INR 50K - 75k" id="ontipr-mno-ibc-2">
-                            <input name="ontipr-mno-ibc" type="radio" value="INR 75K - 1L" id="ontipr-mno-ibc-3">
-                            <input name="ontipr-mno-ibc" type="radio" value="1 Lakh +" id="ontipr-mno-ibc-4">
+                            <input name="ontipr-mno-ibc" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="ontipr-mno-ibc-1">
+                            <input name="ontipr-mno-ibc" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="ontipr-mno-ibc-2">
+                            <input name="ontipr-mno-ibc" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="ontipr-mno-ibc-3">
+                            <input name="ontipr-mno-ibc" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-mno-ibc-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-ibc-1" class="h-100">
@@ -1161,10 +1240,14 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno-wm" type="radio" value="INR 20K - 50K" id="ontipr-mno-wm-1">
-                            <input name="ontipr-mno-wm" type="radio" value="INR 50K - 75k" id="ontipr-mno-wm-2">
-                            <input name="ontipr-mno-wm" type="radio" value="INR 75K - 1L" id="ontipr-mno-wm-3">
-                            <input name="ontipr-mno-wm" type="radio" value="1 Lakh +" id="ontipr-mno-wm-4">
+                            <input name="ontipr-mno-wm" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="ontipr-mno-wm-1">
+                            <input name="ontipr-mno-wm" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="ontipr-mno-wm-2">
+                            <input name="ontipr-mno-wm" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="ontipr-mno-wm-3">
+                            <input name="ontipr-mno-wm" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-mno-wm-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-wm-1" class="h-100">
@@ -1202,10 +1285,14 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-mno-rm" type="radio" value="INR 20K - 50K" id="ontipr-mno-rm-1">
-                            <input name="ontipr-mno-rm" type="radio" value="INR 50K - 75k" id="ontipr-mno-rm-2">
-                            <input name="ontipr-mno-rm" type="radio" value="INR 75K - 1L" id="ontipr-mno-rm-3">
-                            <input name="ontipr-mno-rm" type="radio" value="1 Lakh +" id="ontipr-mno-rm-4">
+                            <input name="ontipr-mno-rm" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="ontipr-mno-rm-1">
+                            <input name="ontipr-mno-rm" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="ontipr-mno-rm-2">
+                            <input name="ontipr-mno-rm" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="ontipr-mno-rm-3">
+                            <input name="ontipr-mno-rm" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-mno-rm-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-mno-rm-1" class="h-100">
@@ -1243,10 +1330,14 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-pp" type="radio" value="INR 20K - 50K" id="ontipr-fnp-pp-1">
-                            <input name="ontipr-fnp-pp" type="radio" value="INR 50K - 75k" id="ontipr-fnp-pp-2">
-                            <input name="ontipr-fnp-pp" type="radio" value="INR 75K - 1L" id="ontipr-fnp-pp-3">
-                            <input name="ontipr-fnp-pp" type="radio" value="1 Lakh +" id="ontipr-fnp-pp-4">
+                            <input name="ontipr-fnp-pp" type="radio" class="opacity-0" value="INR 20K - 50K"
+                                id="ontipr-fnp-pp-1">
+                            <input name="ontipr-fnp-pp" type="radio" class="opacity-0" value="INR 50K - 75k"
+                                id="ontipr-fnp-pp-2">
+                            <input name="ontipr-fnp-pp" type="radio" class="opacity-0" value="INR 75K - 1L"
+                                id="ontipr-fnp-pp-3">
+                            <input name="ontipr-fnp-pp" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-fnp-pp-4">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-pp-1" class="h-100">
@@ -1284,9 +1375,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-cv" type="radio" value="INR 60K - 1L" id="ontipr-fnp-cv-1">
-                            <input name="ontipr-fnp-cv" type="radio" value="INR 1L - 1.5L" id="ontipr-fnp-cv-2">
-                            <input name="ontipr-fnp-cv" type="radio" value="1.5 Lakh +" id="ontipr-fnp-cv-3">
+                            <input name="ontipr-fnp-cv" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-fnp-cv-1">
+                            <input name="ontipr-fnp-cv" type="radio" class="opacity-0" value="INR 1L - 1.5L"
+                                id="ontipr-fnp-cv-2">
+                            <input name="ontipr-fnp-cv" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-fnp-cv-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-cv-1" class="h-100">
@@ -1319,9 +1413,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-ecp" type="radio" value="INR 15K - 30K" id="ontipr-fnp-ecp-1">
-                            <input name="ontipr-fnp-ecp" type="radio" value="INR 30K - 80K" id="ontipr-fnp-ecp-2">
-                            <input name="ontipr-fnp-ecp" type="radio" value="INR 80K+" id="ontipr-fnp-ecp-3">
+                            <input name="ontipr-fnp-ecp" type="radio" class="opacity-0" value="INR 15K - 30K"
+                                id="ontipr-fnp-ecp-1">
+                            <input name="ontipr-fnp-ecp" type="radio" class="opacity-0" value="INR 30K - 80K"
+                                id="ontipr-fnp-ecp-2">
+                            <input name="ontipr-fnp-ecp" type="radio" class="opacity-0" value="INR 80K+"
+                                id="ontipr-fnp-ecp-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-ecp-1" class="h-100">
@@ -1354,9 +1451,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-ev" type="radio" value="INR 60K - 1L" id="ontipr-fnp-ev-1">
-                            <input name="ontipr-fnp-ev" type="radio" value="INR 1L - 1.5L" id="ontipr-fnp-ev-2">
-                            <input name="ontipr-fnp-ev" type="radio" value="1.5 Lakh +" id="ontipr-fnp-ev-3">
+                            <input name="ontipr-fnp-ev" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-fnp-ev-1">
+                            <input name="ontipr-fnp-ev" type="radio" class="opacity-0" value="INR 1L - 1.5L"
+                                id="ontipr-fnp-ev-2">
+                            <input name="ontipr-fnp-ev" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-fnp-ev-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-ev-1" class="h-100">
@@ -1389,9 +1489,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-rp" type="radio" value="INR 50K - 1L" id="ontipr-fnp-rp-1">
-                            <input name="ontipr-fnp-rp" type="radio" value="INR 1L - 1.5L" id="ontipr-fnp-rp-2">
-                            <input name="ontipr-fnp-rp" type="radio" value="1.5 Lakh +" id="ontipr-fnp-rp-3">
+                            <input name="ontipr-fnp-rp" type="radio" class="opacity-0" value="INR 50K - 1L"
+                                id="ontipr-fnp-rp-1">
+                            <input name="ontipr-fnp-rp" type="radio" class="opacity-0" value="INR 1L - 1.5L"
+                                id="ontipr-fnp-rp-2">
+                            <input name="ontipr-fnp-rp" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-fnp-rp-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-rp-1" class="h-100">
@@ -1424,9 +1527,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-sc" type="radio" value="INR 60K - 1L" id="ontipr-fnp-sc-1">
-                            <input name="ontipr-fnp-sc" type="radio" value="INR 1L - 1.5L" id="ontipr-fnp-sc-2">
-                            <input name="ontipr-fnp-sc" type="radio" value="1.5 Lakh +" id="ontipr-fnp-sc-3">
+                            <input name="ontipr-fnp-sc" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-fnp-sc-1">
+                            <input name="ontipr-fnp-sc" type="radio" class="opacity-0" value="INR 1L - 1.5L"
+                                id="ontipr-fnp-sc-2">
+                            <input name="ontipr-fnp-sc" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-fnp-sc-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-sc-1" class="h-100">
@@ -1459,9 +1565,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-fnp-ava" type="radio" value="INR 60K - 1L" id="ontipr-fnp-ava-1">
-                            <input name="ontipr-fnp-ava" type="radio" value="INR 1L - 1.5L" id="ontipr-fnp-ava-2">
-                            <input name="ontipr-fnp-ava" type="radio" value="1.5 Lakh +" id="ontipr-fnp-ava-3">
+                            <input name="ontipr-fnp-ava" type="radio" class="opacity-0" value="INR 60K - 1L"
+                                id="ontipr-fnp-ava-1">
+                            <input name="ontipr-fnp-ava" type="radio" class="opacity-0" value="INR 1L - 1.5L"
+                                id="ontipr-fnp-ava-2">
+                            <input name="ontipr-fnp-ava" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-fnp-ava-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-fnp-ava-1" class="h-100">
@@ -1494,9 +1603,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna-sd" type="radio" value="INR 75K+" id="ontipr-wna-sd-1">
-                            <input name="ontipr-wna-sd" type="radio" value="INR 1L+" id="ontipr-wna-sd-2">
-                            <input name="ontipr-wna-sd" type="radio" value="1.5 Lakh +" id="ontipr-wna-sd-3">
+                            <input name="ontipr-wna-sd" type="radio" class="opacity-0" value="INR 75K+"
+                                id="ontipr-wna-sd-1">
+                            <input name="ontipr-wna-sd" type="radio" class="opacity-0" value="INR 1L+"
+                                id="ontipr-wna-sd-2">
+                            <input name="ontipr-wna-sd" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-wna-sd-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-sd-1" class="h-100">
@@ -1529,9 +1641,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna-iwd" type="radio" value="INR 75K+" id="ontipr-wna-iwd-1">
-                            <input name="ontipr-wna-iwd" type="radio" value="INR 1L+" id="ontipr-wna-iwd-2">
-                            <input name="ontipr-wna-iwd" type="radio" value="1.5 Lakh +" id="ontipr-wna-iwd-3">
+                            <input name="ontipr-wna-iwd" type="radio" class="opacity-0" value="INR 75K+"
+                                id="ontipr-wna-iwd-1">
+                            <input name="ontipr-wna-iwd" type="radio" class="opacity-0" value="INR 1L+"
+                                id="ontipr-wna-iwd-2">
+                            <input name="ontipr-wna-iwd" type="radio" class="opacity-0" value="1.5 Lakh +"
+                                id="ontipr-wna-iwd-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-iwd-1" class="h-100">
@@ -1564,9 +1679,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna-lpd" type="radio" value="INR 25K+" id="ontipr-wna-lpd-1">
-                            <input name="ontipr-wna-lpd" type="radio" value="INR 50K+" id="ontipr-wna-lpd-2">
-                            <input name="ontipr-wna-lpd" type="radio" value="1 Lakh +" id="ontipr-wna-lpd-3">
+                            <input name="ontipr-wna-lpd" type="radio" class="opacity-0" value="INR 25K+"
+                                id="ontipr-wna-lpd-1">
+                            <input name="ontipr-wna-lpd" type="radio" class="opacity-0" value="INR 50K+"
+                                id="ontipr-wna-lpd-2">
+                            <input name="ontipr-wna-lpd" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-wna-lpd-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-lpd-1" class="h-100">
@@ -1599,9 +1717,12 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna-uic" type="radio" value="INR 30K+" id="ontipr-wna-uic-1">
-                            <input name="ontipr-wna-uic" type="radio" value="INR 50K+" id="ontipr-wna-uic-2">
-                            <input name="ontipr-wna-uic" type="radio" value="1 Lakh +" id="ontipr-wna-uic-3">
+                            <input name="ontipr-wna-uic" type="radio" class="opacity-0" value="INR 30K+"
+                                id="ontipr-wna-uic-1">
+                            <input name="ontipr-wna-uic" type="radio" class="opacity-0" value="INR 50K+"
+                                id="ontipr-wna-uic-2">
+                            <input name="ontipr-wna-uic" type="radio" class="opacity-0" value="1 Lakh +"
+                                id="ontipr-wna-uic-3">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-uic-1" class="h-100">
@@ -1634,7 +1755,8 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="ontipr-wna-aif" type="radio" value="INR 2L+" id="ontipr-wna-aif">
+                            <input name="ontipr-wna-aif" type="radio" class="opacity-0" value="INR 2L+"
+                                id="ontipr-wna-aif">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="ontipr-wna-aif" class="h-100">
@@ -1657,11 +1779,16 @@
                             </div>
                         </div>
                         <div class="cons-bottom-container">
-                            <input name="learn-about-us" type="radio" value="A project we did" id="learn-about-us-1">
-                            <input name="learn-about-us" type="radio" value="An Ad" id="learn-about-us-2">
-                            <input name="learn-about-us" type="radio" value="Social Media" id="learn-about-us-3">
-                            <input name="learn-about-us" type="radio" value="Google Search" id="learn-about-us-4">
-                            <input name="learn-about-us" type="radio" value="A friend" id="learn-about-us-5">
+                            <input name="learn-about-us" type="radio" class="opacity-0" value="A project we did"
+                                id="learn-about-us-1">
+                            <input name="learn-about-us" type="radio" class="opacity-0" value="An Ad"
+                                id="learn-about-us-2">
+                            <input name="learn-about-us" type="radio" class="opacity-0" value="Social Media"
+                                id="learn-about-us-3">
+                            <input name="learn-about-us" type="radio" class="opacity-0" value="Google Search"
+                                id="learn-about-us-4">
+                            <input name="learn-about-us" type="radio" class="opacity-0" value="A friend"
+                                id="learn-about-us-5">
                             <div class="cons-b-box small-heading">
                                 <div class="cons-b">
                                     <label for="learn-about-us-1" class="h-100">
@@ -1708,22 +1835,22 @@
                                 <div class="row justify-content-center">
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="name" type="text" placeholder="Your Name*" required>
+                                            <input name="name" type="text" placeholder="Your Name*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="email" type="email" placeholder="Your Email*" required>
+                                            <input name="email" type="email" placeholder="Your Email*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="phone" type="text" placeholder="Your Phone*" required>
+                                            <input name="phone" type="text" placeholder="Your Phone*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="company-name" type="text" placeholder="Company*" required>
+                                            <input name="company-name" type="text" placeholder="Company*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
@@ -1736,21 +1863,18 @@
                                             <input name="social-pre" type="text" placeholder="Social Presence">
                                         </div>
                                     </div>
-                                    <div class="col-sm-10">
-                                        <div class="mb-5 d-flex justify-content-center">
-                                            <button class="th-arrow-btn">
-                                                <span class="btn-text">Submit</span>
-                                                <span class="btn-arrow"><img src="image/main-arrow.png" alt=""></span>
-                                            </button>
-                                        </div>
+                                    <div class="mb-5 d-flex justify-content-center">
+                                        <button type="submit" id="submitBtn" class="th-arrow-btn">
+                                            <span class="btn-text">Submit</span>
+                                            <span class="btn-arrow"><img src="image/main-arrow.png" alt=""></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-            </div>
-            </form>
+                </form>
             </div>
         </section>
         <!-- Contact Section End -->
@@ -1787,12 +1911,46 @@
             $(this).addClass('open').removeClass('close');
         })
 
-        $(".contact-slider").slick({
-        })
+        $(".contact-slider").slick()
         $('.cons-b').click(function () {
             $('.cons-b').removeClass('active');
             $(this).addClass('active');
         })
+        // document.getElementById('submitBtn').addEventListener('click', function () {
+        //     var nameField = document.getElementById('name');
+        //     var emailField = document.getElementById('email');
+        //     var phoneField = document.getElementById('phone');
+        //     var companyField = document.getElementById('company-name');
+        //     document.getElementById('contact_Form').submit();
+        // });
+
+        $(document).ready(function () {
+            $('#submitBtn').click(function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                var nameField = $('#name').val();
+                var emailField = $('#email').val();
+                var phoneField = $('#phone').val();
+                var companyField = $('#company-name').val();
+
+                if (nameField === '') {
+                    alert('Please enter your name');
+                    return false;
+                } else if (emailField === '') {
+                    alert('Please enter your email');
+                    return false;
+                } else if (phoneField === '') {
+                    alert('Please enter your phone');
+                    return false;
+                } else if (companyField === '') {
+                    alert('Please enter your company name');
+                    return false;
+                } else {
+                    $('#contactForm').submit(); // Corrected form ID
+                }
+            });
+        });
+
     </script>
     <script>
         /* Contact validation */
@@ -1964,7 +2122,7 @@
             }
             $(".contact-slider").slick("slickNext");
         });
-        $('input[name="learn-about-us"]').change(function(){
+        $('input[name="learn-about-us"]').change(function () {
             $(".contact-slider").slick("slickNext");
         })
 

@@ -1783,6 +1783,9 @@ main {
 .contact {
     padding-top: 80px;
 }
+.contact input[type='ratio']{
+    opacity: 0;
+}
 
 .cons-top-container h2 {
     line-height: 120%;
