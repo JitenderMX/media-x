@@ -379,6 +379,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .th-arrow-btn .btn-arrow {
@@ -1794,13 +1795,6 @@ main {
     gap: 30px;
     padding: 150px 0px;
 }
-.cons-b-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 150px 0px;
-}
 
 .cons-top-container {
     border-bottom: 1px solid var(--th-color-2);
@@ -1818,11 +1812,13 @@ main {
 .cons-b p {
     transition: all .5s;
 }
+
 .cons-b.active,
 .cons-b:hover {
     background-color: var(--th-color-2);
     color: var(--th-color-3);
 }
+
 .cons-b.active h3,
 .cons-b.active h5,
 .cons-b.active p,
@@ -1835,20 +1831,34 @@ main {
 .cons-b-list .cons-b {
     max-width: 500px;
 }
-.small-heading .cons-b{
+
+.small-heading .cons-b {
     max-width: 220px;
 }
-.input-box .cons-b{
+
+.cons-b-box.input-box{
+    flex-direction: column;
+    align-items: center;
+}
+.cons-b-box.input-box .cons-b {
     max-width: 600px;
     min-width: 500px;
 }
+.cons-b-box.input-box .th-arrow-btn:hover .btn-arrow{
+    transform: translateX(50px);
+}
+.cons-b-box.input-box .th-arrow-btn .btn-text{
+    transform: translateY();
+}
+
 .small-heading .cons-b label {
     padding: 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
- .cons-b input {
+
+.cons-b input {
     color: #C6C6C6;
     padding: 40px 30px;
     width: 100%;
@@ -1856,7 +1866,44 @@ main {
     font-size: var(--th-p-fs);
     font-style: normal;
     font-weight: 500;
-    line-height: 141.05%; /* 33.852px */
+    line-height: 141.05%;
+    /* 33.852px */
+}
+
+.tell-us-about-you input {
+    width: 100%;
+    color: var(--Gray-200, #878787);
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.05%;
+    border: none;
+    border-bottom: 1px solid var(--th-color-Gray);
+    /* 33.852px */
+}
+.tell-us-about-you button {
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.05%;
+    border: none;
+    background-color: transparent;
+    /* 33.852px */
+}
+.tell-us-about-you .th-arrow-btn {
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.05%;
+    border: none;
+    background-color: transparent;
+}
+.tell-us-about-you .th-arrow-btn .btn-text,
+.tell-us-about-you .th-arrow-btn .btn-arrow {
+    transform: none;
 }
 
 .cons-b-list .cons-b ul {
@@ -1876,6 +1923,7 @@ main {
     line-height: 120%;
     margin-bottom: 30px;
 }
+
 .cons-b h5 {
     text-transform: none !important;
     font-weight: 600;
