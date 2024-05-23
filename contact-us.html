@@ -1849,39 +1849,39 @@
                                 <div class="row justify-content-center">
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[name]" type="text" placeholder="Your Name*">
+                                            <input name="name" type="text" placeholder="Your Name*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[email]" type="email" placeholder="Your Email*">
+                                            <input name="email" type="email" placeholder="Your Email*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[phone]" type="text" placeholder="Your Phone*">
+                                            <input name="phone" type="text" placeholder="Your Phone*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[contact]" type="text" placeholder="Company*">
+                                            <input name="company" type="text" placeholder="Company*">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[website]" type="url" placeholder="Website">
+                                            <input name="website" type="url" placeholder="Website">
                                         </div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="mb-5">
-                                            <input name="contact[social-pre]" type="text" placeholder="Social Presence">
+                                            <input name="social-pre" type="text" placeholder="Social Presence">
                                         </div>
                                     </div>
                                     <div class="mb-5 d-flex justify-content-center">
-                                        <butto)n type="submit" id="submitBtn" class="th-arrow-btn">
+                                        <button type="submit" id="submitBtn" class="th-arrow-btn">
                                             <span class="btn-text">Submit</span>
                                             <span class="btn-arrow"><img src="image/main-arrow.png" alt=""></span>
-                                            </butto>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2105,14 +2105,14 @@
         $('input[name="contact[learn-about-us]"]').change(function () {
             $(".contact-slider").slick("slickNext");
         })
-       /*  $(document).ready(function () {
-            $('#submitBtn').click(function () {
-                $('#contactForm').submit(); // Corrected form ID
-            });
-        }); */
-            document.getElementById('submitBtn').addEventListener('click', function(){
-                document.getElementById('contact_Form').submit()
-            })
+        /*  $(document).ready(function () {
+             $('#submitBtn').click(function () {
+                 $('#contactForm').submit(); // Corrected form ID
+             });
+         }); */
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            document.getElementById('contact_Form').submit()
+        })
     </script>
     <!-- <script>
       // Counter code

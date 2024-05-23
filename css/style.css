@@ -642,6 +642,17 @@ main {
 
 /* 11. Career-Hero Section Start ------------------------------ */
 .career-hero {
+    padding-bottom: 100px;
+}
+
+.career-hero .crh-text {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--th-color-2);
+}
+
+/* 
+.career-hero {
     position: relative;
 }
 
@@ -683,12 +694,13 @@ main {
     color: var(--th-color-3);
     border: 4px solid var(--th-color-2);
 
-}
+} 
+*/
 
 /* ------------- Career-Hero Section End ------------- */
 
 /* 12. Career-Hero-Text Section Start ------------------------------ */
-.career-hero-text {
+/* .career-hero-text {
     padding: 80px 0px;
 }
 
@@ -700,16 +712,85 @@ main {
 
 .career-hero-text p {
     text-align: center;
-}
+} */
 
 /* ------------- Career-Hero-Text Section End ------------- */
 /* 13. Career-Team Section Start ------------------------------ */
-#career-page h2 {
+/* #career-page h2 {
     text-transform: none;
     text-decoration: underline 5px var(--th-color-1);
-}
+} */
 
 /* ------------- Career-Team Section End ------------- */
+
+/* 12. Workplace Section Start ------------------------------ */
+.workplace {
+    padding: 80px 0px;
+}
+
+.work-box {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    /* height: 100%; */
+    padding: 25px;
+    border: 2px solid var(--th-color-2);
+    transition: all .5s;
+}
+
+.work-box:hover {
+    background-color: var(--th-color-2);
+}
+
+.work-box .wb-num {
+    color: var(--th-color-3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-h2-fs);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    /* 78.08px */
+    letter-spacing: 4.48px;
+}
+
+.work-box .wb-title {
+    color: var(--th-color-2);
+    font-family: var(--th-font-2);
+    font-size: calc(var(--th-h4-fs)*.9);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 10px 0px 15px 0px;
+    transition: all .5s;
+}
+
+.work-box:hover .wb-title {
+    color: var(--th-color-3);
+}
+
+.work-box .wb-text p {
+    color: var(--th-color-3);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    /* 30.96px */
+    margin-top: 30px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.work-box:hover .wb-text p {
+    height: 250px;
+}
+
+
+/* ------------- Workplace Section End ------------- */
+
 
 
 /* 13. Careers Section Start ------------------------------ */
@@ -1783,7 +1864,8 @@ main {
 .contact {
     padding-top: 80px;
 }
-.contact input[type='ratio']{
+
+.contact input[type='ratio'] {
     opacity: 0;
 }
 
@@ -1839,18 +1921,21 @@ main {
     max-width: 220px;
 }
 
-.cons-b-box.input-box{
+.cons-b-box.input-box {
     flex-direction: column;
     align-items: center;
 }
+
 .cons-b-box.input-box .cons-b {
     max-width: 600px;
     min-width: 500px;
 }
-.cons-b-box.input-box .th-arrow-btn:hover .btn-arrow{
+
+.cons-b-box.input-box .th-arrow-btn:hover .btn-arrow {
     transform: translateX(50px);
 }
-.cons-b-box.input-box .th-arrow-btn .btn-text{
+
+.cons-b-box.input-box .th-arrow-btn .btn-text {
     transform: translateY();
 }
 
@@ -1885,6 +1970,7 @@ main {
     border-bottom: 1px solid var(--th-color-Gray);
     /* 33.852px */
 }
+
 .tell-us-about-you button {
     font-family: var(--th-font-2);
     font-size: var(--th-p-fs);
@@ -1895,6 +1981,7 @@ main {
     background-color: transparent;
     /* 33.852px */
 }
+
 .tell-us-about-you .th-arrow-btn {
     font-family: var(--th-font-2);
     font-size: var(--th-p-fs);
@@ -1904,6 +1991,7 @@ main {
     border: none;
     background-color: transparent;
 }
+
 .tell-us-about-you .th-arrow-btn .btn-text,
 .tell-us-about-you .th-arrow-btn .btn-arrow {
     transform: none;
