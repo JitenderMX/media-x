@@ -968,7 +968,7 @@ main {
     margin-bottom: 30px;
     border-top: 1px solid #878787;
     border-bottom: 1px solid #878787;
-    text-align: center;
+    /* text-align: center; */
     transition: all .5s;
 }
 
@@ -1144,7 +1144,7 @@ main {
 /* ------------- Footer Section End ------------- */
 
 /* 16.Job Description Section Start ------------------------------ */
-.job-description {
+/* .job-description {
     margin-top: 100px;
     padding: 50px 0px;
 }
@@ -1213,8 +1213,97 @@ main {
 .jd-left .fas:hover {
     background-color: var(--th-color-1);
     color: var(--th-color-3);
+} */
+.jd-head {
+    padding-top: 50px;
 }
 
+.jd-head .jd-h-box {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--th-color-2);
+}
+
+.jd-head .jdh-img {
+    max-width: 50px;
+    transform: rotate(180deg);
+}
+
+.jd-main {
+    padding: 20px 0px 100px 0px;
+    position: relative;
+
+}
+
+.jdm-left {
+    border-right: 1px solid var(--th-color-2);
+    padding: 20px;
+}
+
+.jdm-loc {
+    margin-top: 30px;
+}
+
+.jdm-loc .fas {
+    font-size: var(--th-p-fs);
+}
+
+.jdm-loc h6 {
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.jdm-text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.jdm-text h5 {
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+
+.jdm-right {
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.jdm-right h5 {
+    font-family: var(--th-font-2);
+    font-size: var(--th-h4-fs);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.jdm-right label{
+    font-family: var(--th-font-2);
+    font-size: calc(var(--th-p-fs)*.8);
+    font-weight: 600;
+    line-height: 1.2;
+}
+.jdm-right .form-control{
+    border-radius: 0px !important;
+}
+.jdm-right .th-arrow-btn{
+    background-color:transparent;
+    border: none;
+}
+.jdm-right .th-arrow-btn:hover .btn-arrow {
+    transform: translateX(-65px);
+}
+.jdm-right .th-arrow-btn:hover .btn-text {
+    transform: translateX(55px);
+}
 /* ------------- Job Description Section End ------------- */
 /* 17.Apply Form Section Start ------------------------------ */
 .apply-form {
