@@ -845,23 +845,243 @@ main {
 }
 
 /* ------------- Careers Section End ------------- */
+/* 14. Our Experts Section Start ------------------------------ */
+.muex-img {
+    padding: 40px 40px 0px 0px;
+    border-top: 1px solid var(--th-color-2);
+    border-right: 1px solid var(--th-color-2);
+}
 
+.muex-text {
+    position: relative;
+}
 
-/* 14. Wraning Section Start ------------------------------ */
-.warning {
-    padding: 50px 0px;
-    text-align: center;
-    background-color: var(--th-color-1);
+.muex-text h1 {
+    color: var(--th-color-1);
+    font-size: calc(var(--th-h1-fs)*2);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 0;
+    /* 755.613px */
+    position: absolute;
+    /* leading-trim: both;
+    text-edge: cap; */
+    left: -10%;
+    top: 10%;
+    z-index: 1;
+}
+
+.muex-text h3 {
+    font-family: var(--th-font-2);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 122%;
+    position: relative;
+    z-index: 10;
+    /* 58.56px */
+}
+
+.muex-text p {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 122%;
+    margin: 50px 0px;
+}
+
+.muex-text h5 {
+    font-weight: 600;
+    text-transform: none;
+    line-height: 122%;
+    /* 29.28px */
+}
+
+.muex-text h6 {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 122%;
+    /* 29.28px */
+}
+
+.ouex-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.ouex-ar {
+    max-width: 45px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ------------- Our Experts Section End ------------- */
+
+/* 14. We Are Looking Section Start ------------------------------ */
+.we-are-looking {
+    background-color: var(--th-color-2);
+    padding: 80px 0px;
+    margin-top: 80px;
+}
+
+.we-are-looking .wal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.we-are-looking .wal-text h2 {
+    margin-bottom: 70px;
+    color: var(--th-color-3);
+    line-height: 1.2;
+}
+
+.we-are-looking .wal-text p {
     color: var(--th-color-3);
 }
 
-.warning a {
+.we-are-looking .wal-text a {
+    color: var(--th-color-3);
+    text-decoration: underline;
+}
+
+/* ------------- We Are Looking Section End ------------- */
+
+/* 20.Opening Section Start ------------------------------ */
+.opening {
+    padding: 80px 0px;
+}
+
+.opening-head h5 {
+    color: var(--th-color-5);
+    font-size: var(--th-p1);
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.opening-box {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #878787;
+    border-bottom: 1px solid #878787;
+    text-align: center;
+    transition: all .5s;
+}
+
+.opening-box h4 {
+    font-family: var(--th-font-2);
+    font-size: var(--th-h4-fs);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+    transition: all .5s;
+}
+
+.opening-box:hover h4,
+.opening-box:hover p {
+    color: var(--th-color-3) !important;
+}
+
+.opening-box p {
+    /* font-size: var(--th-p1); */
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-weight: 400;
+    line-height: 1.2;
+    transition: all .5s;
+}
+
+.opening-box .th-arrow-btn {
+    opacity: 0;
+}
+
+.opening-box .th-arrow-btn .btn-text {
     color: var(--th-color-3);
     transition: all .5s;
 }
 
-.warning a:hover {
+.opening-box:hover {
+    background-color: var(--th-color-1);
+}
+
+.opening-box:hover h4,
+.opening-box:hover p {
+    color: var(--th-color-4);
+}
+
+.opening-box:hover .th-arrow-btn {
+    opacity: 1;
+}
+
+.opening-box .th-arrow-btn:hover .btn-arrow {
+    transform: translateX(80px);
+}
+
+.opening-box .th-arrow-btn:hover .btn-text {
+    transform: translateX(-35px);
+}
+
+/* ------------- Opening Section  End ------------- */
+
+
+/* 14. Wraning Section Start ------------------------------ */
+.warning {
+    color: var(--th-color-3);
+}
+
+.war-box {
+    padding: 50px 30px;
+    background-color: var(--th-color-1);
+}
+
+.war-title {
+    font-family: var(--th-font-2);
+    font-size: var(--th-h3-fs);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.war-box a {
+    color: var(--th-color-3);
+    transition: all .5s;
+}
+
+.war-box a:hover {
     text-decoration: underline;
+}
+
+.social-box h5 {
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.social-box ul {
+    list-style: none;
+}
+
+.social-box .fab {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: var(--th-p-fs);
+    background-color: rgba(0, 0, 0, 1);
+    color: var(--th-color-3);
+    transform: translateY(0);
+    transition: all .5s;
+}
+
+.social-box .fab:hover {
+    background-color: var(--th-color-1);
+    transform: translateY(-4px);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /* ------------- Wraning Section End ------------- */
