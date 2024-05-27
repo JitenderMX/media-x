@@ -1267,7 +1267,6 @@ main {
     line-height: 1.2;
     text-decoration: underline;
     margin-bottom: 20px;
-
 }
 
 .jdm-right {
@@ -1285,25 +1284,30 @@ main {
     margin-bottom: 20px;
 }
 
-.jdm-right label{
+.jdm-right label {
     font-family: var(--th-font-2);
     font-size: calc(var(--th-p-fs)*.8);
     font-weight: 600;
     line-height: 1.2;
 }
-.jdm-right .form-control{
+
+.jdm-right .form-control {
     border-radius: 0px !important;
 }
-.jdm-right .th-arrow-btn{
-    background-color:transparent;
+
+.jdm-right .th-arrow-btn {
+    background-color: transparent;
     border: none;
 }
+
 .jdm-right .th-arrow-btn:hover .btn-arrow {
     transform: translateX(-65px);
 }
+
 .jdm-right .th-arrow-btn:hover .btn-text {
     transform: translateX(55px);
 }
+
 /* ------------- Job Description Section End ------------- */
 /* 17.Apply Form Section Start ------------------------------ */
 .apply-form {
@@ -2332,3 +2336,105 @@ main {
 }
 
 /* ------------- Contact Slider Section End ------------- */
+
+
+
+
+/* ------------ Sub Service Page =================------------ */
+
+/* 33.Sub Service Hero Section Start ------------- */
+.sub-service-hero {
+    padding: 100px 0px;
+}
+
+.ssh-box {
+    height: 482px;
+    overflow: hidden;
+}
+
+.ssh-img-box {
+    margin-bottom: 50px;
+}
+
+/* @keyframes moveDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+} */
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.ssh-slider {
+    animation: moveDown 50s linear infinite alternate;
+}
+
+/* ------------- Sub Service Hero Section End ------------- */
+
+/* 34.What we do Section Start ------------- */
+.what-we-do {
+    background-color: var(--th-color-2);
+    padding: 100px 0px;
+}
+
+.what-we-do .main-head h2 {
+    color: var(--th-color-3);
+}
+
+.what-we-do .main-head p {
+    color: var(--th-color-3);
+}
+
+.whwedo-box {
+    margin: 30px;
+    position: relative;
+}
+
+.whwedo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+    background-color: var(--th-color-2);
+    border: 1px solid var(--th-color-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    transition: all .5s;
+}
+
+.whwedo-text h6 {
+    color: var(--th-color-3);
+    text-align: center;
+    font-family: var(--th-font-2);
+    font-size: var(--th-p-fs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+}
+
+.whwedo-text p {
+    color: #FFFDF6;
+}
+.whwedo-box:hover .whwedo-text {
+    transform-origin: bottom left;
+    transform: rotate(65deg) translateY(100px);
+    transform-origin: left bottom;
+    background-color: var(--th-color-1);
+    /* border: 1px solid var(--th-color-1); */
+}
+/* ------------- What we do Section End ------------- */
