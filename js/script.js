@@ -21,7 +21,7 @@ $(document).ready(function () {
     } 
     if (viewportWidth <= 576) {
       // Code for small devices (576px and down)
-      console.log('Medium device');
+      // console.log('Medium device');
     } 
   }
 });

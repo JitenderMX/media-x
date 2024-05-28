@@ -63,7 +63,7 @@ h5,
 h6 {
     color: var(--th-color-2);
     font-family: var(--th-font-2);
-    line-height: 145%;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
@@ -80,6 +80,7 @@ h2 {
 h3 {
     font-size: var(--th-h3-fs);
     font-weight: 500;
+    line-height: 1.2;
 }
 
 h4 {
@@ -143,7 +144,7 @@ main {
 /* 03. Header Section Start ------------------------------ */
 #header {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;
@@ -1103,7 +1104,7 @@ main {
     font-weight: 700;
     line-height: 129%;
     /* 61.92px */
-    letter-spacing: 2.88px;
+    /* letter-spacing: 2.88px; */
     text-transform: uppercase !important;
     text-decoration: none !important;
 }
@@ -1119,7 +1120,9 @@ main {
     font-family: var(--th-font-2);
     text-decoration: .5px underline;
 }
-
+.ft-left{
+    width: 100%;
+}
 .footer-main .ft-right {
     text-align: end;
 }
@@ -1412,7 +1415,7 @@ main {
     font-family: var(--th-font-1);
     font-style: normal;
     font-weight: 600;
-    line-height: 150%;
+    line-height: 1.2;
     /* 65.435px */
     text-transform: none;
 }
@@ -1723,6 +1726,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
     min-width: 750px;
     max-width: 750px;
     margin: auto;
@@ -1746,6 +1750,9 @@ main {
     max-width: 70%;
     text-align: center;
 }
+.test-q img{
+    width: 100%;
+}
 
 /* ------------- Testimonial Section End ------------- */
 
@@ -1764,7 +1771,7 @@ main {
 }
 
 .wow-box {
-    padding: 50px;
+    padding: 40px;
     border: 1px solid var(--th-color-Gray);
     transition: all .5s;
 }
