@@ -1,7 +1,21 @@
 /* Extra large devices (1200px and down) */
 
 @media screen and (max-width: 1200px) {
-
+    :root {
+        --th-color-1: #E12726;
+        --th-color-2: #000000;
+        --th-color-3: #ffffff;
+        --th-color-black: #090909;
+        --th-color-Gray: #2f2f2f;
+        --th-font-1: "Raleway", sans-serif;
+        --th-font-2: "Helvetica Neue", sans-serif;
+        --th-h1-fs: calc(120px*.8);
+        --th-h2-fs: calc(64px*.8);
+        --th-h3-fs: calc(48px*.8);
+        --th-h4-fs: calc(32px*.8);
+        --th-p-fs: calc(24px*.8);
+        /* --th-link-fs: calc(18px*.8); */
+    }
     .project-box .pro-left {
         padding: 20px 20px;
     }
@@ -26,6 +40,21 @@
     .gli-img-box {
         transform: translateX(480px);
     }
+    .project-box .pro-title{
+        margin-bottom: 15px;
+    }
+    .project-box .pro-left.pro-type-1{
+        padding: 20px;
+    }
+    .project-box .pro-left.pro-type-2{
+        padding: 20px;
+    }
+    .tag-box .tag{
+        padding: 4px 10px;
+    }
+    .tag-box {
+        margin-bottom: 16px;
+    }
 }
 
 
@@ -33,15 +62,6 @@
 
 @media screen and (max-width: 992px) {
     :root {
-        --th-color-1: #E12726;
-        --th-color-2: #000000;
-        --th-color-3: #ffffff;
-        --th-color-black: #090909;
-        --th-color-Gray: #2f2f2f;
-        --th-font-1: "Raleway", sans-serif;
-        --th-font-2: "Helvetica Neue", sans-serif;
-        --th-h1-fs: calc(120px*.8);
-        --th-h2-fs: calc(64px*.8);
         --th-h3-fs: calc(48px*.8);
         --th-h4-fs: calc(32px*.8);
         --th-p-fs: calc(24px*.8);
@@ -85,6 +105,17 @@
     }
     .glimg{
         width: 200px;
+    }
+    .project-hero .ph-main {
+        font-size:var(--th-h1-fs);
+    }
+    .project-box .pro-left.pro-type-1,
+        .project-box .pro-left.pro-type-2{
+        padding: 40px 20px;
+        border: 2px solid var(--th-color-2);
+    }
+    .project-box .pro-left.pro-type-2 .pro-b-text{
+        max-width: 100%;
     }
 }
 

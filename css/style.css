@@ -239,7 +239,7 @@ main {
 .project-tab .pt-btn-box li {
     color: var(--th-color-2);
     font-family: var(--th-font-2);
-    font-size: var(--th-p-fs);
+    font-size: var(--th-link-fs);
     font-weight: 300;
     line-height: 112%;
     letter-spacing: 1.2px;
