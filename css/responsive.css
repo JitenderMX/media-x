@@ -23,6 +23,9 @@
         padding: 30px;
         height: 100%;
     }
+    .gli-img-box {
+        transform: translateX(480px);
+    }
 }
 
 
@@ -42,7 +45,7 @@
         --th-h3-fs: calc(48px*.8);
         --th-h4-fs: calc(32px*.8);
         --th-p-fs: calc(24px*.8);
-        --th-link-fs: calc(18px*.8);
+        /* --th-link-fs: calc(18px*.8); */
     }
 
     .project-box .pro-tag-box .pro-tag {
@@ -80,6 +83,9 @@
     .footer-main{
         padding: 20px;
     }
+    .glimg{
+        width: 200px;
+    }
 }
 
 
@@ -115,6 +121,28 @@
     }
     .tes-box .test-content{
         min-width: 400px;
+    }
+    .col-xl-2:nth-child(even) .te-box {
+        transform: translateY(0%);
+    }
+    .te-text{
+        gap: 10px;
+        padding: 10px;
+    }
+    .about-hero .abh-marqee-text h1{
+        font-size: var(--th-h1-fs);
+    }
+    .about-hero{
+        padding: 0;
+    }
+    .team{
+        padding-bottom: 0px;
+    }
+    .team-box {
+        margin-top: 20px;
+    }
+    .oub-box{
+        padding: 20px;
     }
 }
 
@@ -224,4 +252,21 @@
     .footer-main .footer-top {
         padding-bottom: 20px;
     }
+    
+.oub-box-1,
+.oub-box-3 {
+    top: 0%;
+}
+.our-belifes:hover .oub-box-1,
+.our-belifes:hover .oub-box-3 {
+    top: 0%;
+}
+
+.our-belifes:hover .oub-box-2,
+.our-belifes:hover .oub-box-4 {
+    top: 0%;
+}
+.oub-right{
+    padding: 0;
+}
 }
