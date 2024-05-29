@@ -175,6 +175,10 @@
     .oub-box{
         padding: 20px;
     }
+    .project-hero {
+        height: 70vh;
+        padding: 100px 0px;
+    }
 }
 
 
@@ -299,5 +303,8 @@
 }
 .oub-right{
     padding: 0;
+}
+.glimg-text p{
+    width: 100%;
 }
 }

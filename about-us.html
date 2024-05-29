@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 
+
+    <!-- Swipper Slider Css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body id="about-page">
@@ -238,7 +242,18 @@
                 <h2>A glimpse of our past</h2>
             </div>
             <div class="container-xxl p-0 mt-5">
-                <div class="gli-img-container">
+                <div class="swiper mySwiper" id="mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="glimg-1"><img src="image/i1.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-2"><img src="image/i2.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-3"><img src="image/i3.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-4"><img src="image/i4.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-5"><img src="image/i5.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-6"><img src="image/i6.png" alt=""></div>
+                        <div class="swiper-slide" id="glimg-7"><img src="image/i7.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- <div class="gli-img-container">
                     <div class="gli-img-box d-none d-lg-flex">
                         <div class="glimg active" data-tra="700px" id="glimg-1"><img src="image/i1.png" class="w-100"
                                 alt=""></div>
@@ -271,25 +286,32 @@
                         <div class="glimg" data-tra="-800px" id="glimg-7"><img src="image/i4.png" class="w-100" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row justify-content-center text-center">
-                    <div class="col-sm-10 col-md-8 mt-5 glimg-text">
-                        <p data-gli-text="glimg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto
+                    <div class="col-sm-10 col-md-8 mt-4 glimg-text">
+                        <p class="" data-gli-text="glimg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                            iusto
                             rem minima, dolorum molestias minus hic. Eaque eum labore at deserunt ut numquam modi
                             reprehenderit, perspiciatis blanditiis nesciunt facere recusandae!</p>
-                        <p data-gli-text="glimg-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p data-gli-text="glimg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto
+                        <p class="d-none" data-gli-text="glimg-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</p>
+                        <p class="d-none" data-gli-text="glimg-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non iusto
                             rem minima, dolorum</p>
-                        <p data-gli-text="glimg-4">Non iusto rem minima, dolorum molestias minus hic. Eaque eum labore
+                        <p class="d-none" data-gli-text="glimg-4">Non iusto rem minima, dolorum molestias minus hic.
+                            Eaque eum labore
                             at deserunt ut numquam modi reprehenderit, perspiciatis blanditiis nesciunt facere
                             recusandae!</p>
-                        <p data-gli-text="glimg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto
+                        <p class="d-none" data-gli-text="glimg-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non iusto
                             rem minima, dolorum molestias minus hic. Eaque eum labore at deserunt ut numquam modi
                             reprehenderit</p>
-                        <p data-gli-text="glimg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum
+                        <p class="d-none" data-gli-text="glimg-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque eum
                             labore at deserunt ut numquam modi reprehenderit, perspiciatis blanditiis nesciunt facere
                             recusandae!</p>
-                        <p data-gli-text="glimg-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto
+                        <p class="d-none" data-gli-text="glimg-7">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Non iusto
                             rem minima, perspiciatis blanditiis nesciunt facere recusandae!</p>
                     </div>
                 </div>
@@ -445,19 +467,58 @@
     <!-- Slick Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
+    <!-- Initialize Swiper -->
     <script>
-        $(".glimg-text p").fadeOut();
-        $(`.glimg-text [data-gli-text="${$('.glimg.active').attr('id')}"]`).fadeIn();
-        $(".glimg").click(function () {
-            $(".glimg").removeClass('active');
-            $(".glimg-text p").fadeOut();
-            $(this).addClass('active');
-            $(".gli-img-box").css({
-                "transform": `translateX(${$(this).data('tra')})`
-            })
-            $(`.glimg-text [data-gli-text="${$(this).attr('id')}"]`).fadeIn();
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        centeredSlides: true,
+        breakpoints: {
+          320: {  // small screens
+            slidesPerView: 3,
+          },
+          480: {  // medium screens
+            slidesPerView: 4,
+          },
+          768: {  // large screens
+            slidesPerView: 3,
+          },
+          1024: {  // extra large screens
+            slidesPerView: 4,
+          },
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            updateSlides();
+          }
+        }
+      });
+
+      function updateSlides() {
+        document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+          slide.classList.remove('swiper-slide-active');
+        });
+        swiper.slides[swiper.activeIndex].classList.add('swiper-slide-active');
+      }
+
+      // Add click event listener to each slide
+      document.querySelectorAll('.swiper-slide').forEach(function(slide, index) {
+        slide.addEventListener('click', function() {
+          swiper.slideTo(index);
+        });
+      });
+
+      // Initial update
+      updateSlides();
+    </script>
+    <script>
+       $('.swiper-slide').click(function(){
+            $(".glimg-text p").addClass('d-none');
+            $(`[data-gli-text="${$(this).attr('id')}"]`).removeClass('d-none');
         })
     </script>
     <script>

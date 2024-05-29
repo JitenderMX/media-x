@@ -1120,9 +1120,11 @@ main {
     font-family: var(--th-font-2);
     text-decoration: .5px underline;
 }
-.ft-left{
+
+.ft-left {
     width: 100%;
 }
+
 .footer-main .ft-right {
     text-align: end;
 }
@@ -1750,7 +1752,8 @@ main {
     max-width: 70%;
     text-align: center;
 }
-.test-q img{
+
+.test-q img {
     width: 100%;
 }
 
@@ -2052,6 +2055,37 @@ main {
     padding: 80px 0px;
 }
 
+.glimpse .swiper-wrapper {
+    align-items: center;
+}
+
+/* .glimpse .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, filter 0.3s;
+} */
+
+.glimpse .swiper-slide-active {
+    transform: scale(2);
+    filter: grayscale(0);
+}
+
+.glimpse .swiper-slide:not(.swiper-slide-active) {
+    /* transform: scale(0.95); */
+    filter: grayscale(1);
+}
+
+.glimpse .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .gli-img-container {
     overflow: hidden;
 }
@@ -2096,10 +2130,11 @@ main {
 
 .glimg-text p {
     width: 80%;
-    position: absolute;
+    margin: auto;
+    /* position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 /* ------------- Glimpse Section End ------------- */
@@ -2437,6 +2472,7 @@ main {
 .whwedo-text p {
     color: #FFFDF6;
 }
+
 .whwedo-box:hover .whwedo-text {
     transform-origin: bottom left;
     transform: rotate(65deg) translateY(100px);
@@ -2444,4 +2480,5 @@ main {
     background-color: var(--th-color-1);
     /* border: 1px solid var(--th-color-1); */
 }
+
 /* ------------- What we do Section End ------------- */
