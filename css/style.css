@@ -786,7 +786,7 @@ main {
 }
 
 .work-box:hover .wb-text p {
-    height: 250px;
+    height: 230px;
 }
 
 
@@ -2180,7 +2180,7 @@ main {
 }
 
 .case-visual-identity .cavi-img {
-    width: 135px;
+    width: 100%;
     max-width: 135px;
 }
 
