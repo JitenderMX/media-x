@@ -190,7 +190,7 @@ main {
     /* gap: 30px; */
     position: relative;
 }
-.header .col-3 .th-btn.active{
+.header .th-btn{
     background-color: var(--th-color-1);
     color: var(--th-color-3);
 }
@@ -2288,20 +2288,41 @@ main {
 .cons-b {
     border: 1px solid var(--th-color-2);
     max-width: 380px;
+    position: relative;
+    overflow: hidden;
     transition: all .5s;
+}
+.cons-b::before{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: var(--th-color-2);
+    transform-origin: bottom left;
+    transform: scale(0);
+    border-top-right-radius: 50px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.cons-b:hover:before{
+    transform: scale(1.5);
 }
 
 .cons-b h3,
 .cons-b h5,
 .cons-b p {
+    position: relative;
+    z-index: 1;
     transition: all .5s;
 }
 
-.cons-b.active,
+/* .cons-b.active,
 .cons-b:hover {
     background-color: var(--th-color-2);
     color: var(--th-color-3);
-}
+} */
 
 .cons-b.active h3,
 .cons-b.active h5,
