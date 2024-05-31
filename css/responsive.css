@@ -103,7 +103,7 @@ gap: 10px;
     .nm-item.active .nm-link,
     .nav-menu .nm-link:hover {
         background-color: var(--th-color-1);
-        color: var(--th-color-3);
+        color: var(--th-color-3) !important;
     }
     .nm-item .th-btn {
         padding: 4px 20px;
