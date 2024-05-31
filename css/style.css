@@ -164,6 +164,9 @@ main {
 #header.active .nm-link {
     color: var(--th-color-3);
 }
+#header.active .nm-link:hover{
+    color: var(--th-color-1);
+}
 
 .header .container-xxl {
     border-bottom: 2px solid var(--th-color-2);
@@ -187,7 +190,10 @@ main {
     /* gap: 30px; */
     position: relative;
 }
-
+.header .col-3 .th-btn.active{
+    background-color: var(--th-color-1);
+    color: var(--th-color-3);
+}
 .nav-menu .nm-link {
     width: 100px;
     text-align: center;
@@ -214,25 +220,35 @@ main {
     transition: all .5s;
 }
 .nm-item.active .nm-link{
-    color: var(--th-color-1);
+    color: var(--th-color-1) !important;
 }
-.nm-item.active:nth-child(1) ~ .nm-circle,
+.nm-item.active:nth-child(1) ~ .nm-circle{
+    left: 50px;
+}
+.nm-item.active:nth-child(2) ~ .nm-circle{
+    left: 150px;
+}
+.nm-item.active:nth-child(3) ~ .nm-circle {
+    left: 250px;
+}
+.nm-item.active:nth-child(4) ~ .nm-circle {
+    left: 350px;
+}
+.nm-item.active:nth-child(5) ~ .nm-circle {
+    left: 450px;
+}
 .nm-item:nth-child(1):hover ~ .nm-circle {
     left: 50px;
 }
-.nm-item.active:nth-child(2) ~ .nm-circle,
 .nm-item:nth-child(2):hover ~ .nm-circle {
     left: 150px;
 }
-.nm-item.active:nth-child(3) ~ .nm-circle,
 .nm-item:nth-child(3):hover ~ .nm-circle {
     left: 250px;
 }
-.nm-item.active:nth-child(4) ~ .nm-circle,
 .nm-item:nth-child(4):hover ~ .nm-circle {
     left: 350px;
 }
-.nm-item.active:nth-child(5) ~ .nm-circle,
 .nm-item:nth-child(5):hover ~ .nm-circle {
     left: 450px;
 }
