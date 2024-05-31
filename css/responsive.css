@@ -130,6 +130,9 @@
         visibility: visible;
         transform: translateY(0px);
     }
+    .nav-logo{
+        max-width: 250px;
+    }
 
     .hamburger {
         cursor: pointer;
@@ -389,6 +392,10 @@
         --th-h1-fs: calc(120px*.55);
         --th-h2-fs: calc(64px*.55);
         --th-h4-fs: calc(32px*.65);
+    }
+    
+    .hamburger {
+        transform:scale(.8);
     }
 
     .ous-box {
