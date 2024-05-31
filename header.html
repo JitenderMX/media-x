@@ -6,7 +6,7 @@
                     <a href="index.html"><img src="image/logo.png" alt="" class="w-100"></a>
                 </div>
             </div>
-            <div class="col-sm-6 my-3">
+            <div class="col-lg-6 my-3 nav-menu-container">
                 <div class="nav-menu">
                     <ul class="m-0 p-0 list-unstyled">
                         <li class="nm-item"><a class="nm-link" href="index.html">Home</a></li>
@@ -14,10 +14,20 @@
                         <li class="nm-item"><a class="nm-link" href="service.html">Services</a></li>
                         <li class="nm-item"><a class="nm-link" href="project.html">Projects</a></li>
                         <li class="nm-item"><a class="nm-link" href="careers.html">Careers</a></li>
+                        <li class="nm-item">
+                            <a href="contact-us.html" class="th-btn d-inline-block d-lg-none">contact us</a>    
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-3 my-3 text-end"><a href="contact-us.html" class="th-btn">contact us</a></div>
+            <div class="col-3 my-3 d-flex justify-content-end">
+                <a href="contact-us.html" class="th-btn d-none d-lg-inline-block">contact us</a>
+                <div class="hamburger d-block d-lg-none" id="hamburger-6">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+            </div>
         </div>
     </div>
 </div>
@@ -31,4 +41,8 @@
             $("#header").removeClass("active");
         }
     })
+    $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+    $('.nav-menu-container').toggleClass("active");
+  });
 </script>
