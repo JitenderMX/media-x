@@ -9,14 +9,19 @@
             <div class="col-lg-6 my-3 nav-menu-container">
                 <div class="nav-menu">
                     <ul class="m-0 p-0 list-unstyled">
-                        <li class="nm-item"><a class="nm-link" href="index.html">Home</a></li>
-                        <li class="nm-item"><a class="nm-link" href="about-us.html">About Us</a></li>
-                        <li class="nm-item"><a class="nm-link" href="service.html">Services</a></li>
-                        <li class="nm-item"><a class="nm-link" href="project.html">Projects</a></li>
-                        <li class="nm-item"><a class="nm-link" href="careers.html">Careers</a></li>
-                        <li class="nm-item">
-                            <a href="contact-us.html" class="th-btn d-inline-block d-lg-none">contact us</a>    
+                        <li class="nm-item" data-page="home-page"><a class="nm-link" href="index.html">Home</a></li>
+                        <li class="nm-item" data-page="about-page"><a class="nm-link" href="about-us.html">About Us</a>
                         </li>
+                        <li class="nm-item" data-page="service-page"><a class="nm-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nm-item" data-page="project-page"><a class="nm-link" href="project.html">Projects</a>
+                        </li>
+                        <li class="nm-item" data-page="career-page"><a class="nm-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nm-item">
+                            <a href="contact-us.html" class="th-btn d-inline-block d-lg-none">contact us</a>
+                        </li>
+                        <div class="nm-circle"></div>
                     </ul>
                 </div>
             </div>
@@ -26,23 +31,26 @@
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         let st = $(window).scrollTop();
-        if(st>10){
+        if (st > 10) {
             $("#header").addClass("active");
-        } else{
+        } else {
             $("#header").removeClass("active");
         }
     })
-    $(".hamburger").click(function(){
-    $(this).toggleClass("is-active");
-    $('.nav-menu-container').toggleClass("active");
-  });
+    $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+        $('.nav-menu-container').toggleClass("active");
+    });
+    var pageValue = $('body').attr('id');
+
+    $('[data-page="' + pageValue + '"]').addClass('active');
 </script>

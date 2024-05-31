@@ -176,48 +176,70 @@ main {
 
 .nav-menu {
     width: 100%;
-}
-
-.nav-menu ul {
-    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    position: relative;
 }
 
 .nav-menu .nm-link {
+    width: 100px;
+    text-align: center;
     color: var(--th-color-2);
     font-family: var(--th-font-1);
     font-size: var(--th-link-fs);
     display: inline-block;
     overflow-y: hidden;
+    font-weight: 500;
     position: relative;
     z-index: 110;
-    padding: 10px;
+    /* padding: 10px; */
     transition: all .5s;
 }
-
-.nav-menu .nm-link::after {
-    content: " ";
-    width: 100%;
-    height: 100%;
+.nm-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     background-color: var(--th-color-1);
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    top: 100%;
+    left: 50px;
+    transform: translateX(-50%);
     transition: all .5s;
-    transform: translateY(100%);
+}
+.nm-item.active .nm-link{
+    color: var(--th-color-1);
+}
+.nm-item.active:nth-child(1) ~ .nm-circle,
+.nm-item:nth-child(1):hover ~ .nm-circle {
+    left: 50px;
+}
+.nm-item.active:nth-child(2) ~ .nm-circle,
+.nm-item:nth-child(2):hover ~ .nm-circle {
+    left: 150px;
+}
+.nm-item.active:nth-child(3) ~ .nm-circle,
+.nm-item:nth-child(3):hover ~ .nm-circle {
+    left: 250px;
+}
+.nm-item.active:nth-child(4) ~ .nm-circle,
+.nm-item:nth-child(4):hover ~ .nm-circle {
+    left: 350px;
+}
+.nm-item.active:nth-child(5) ~ .nm-circle,
+.nm-item:nth-child(5):hover ~ .nm-circle {
+    left: 450px;
 }
 
 .nav-menu .nm-link:hover {
-    color: var(--th-color-3);
+    color: var(--th-color-1);
 }
-
-.nav-menu .nm-link:hover:after {
-    transform: translateY(0%);
-}
-
 /* ------------- Header Section  End ------------- */
 
 /* 04. Project Hero Section Start ------------------------------ */
