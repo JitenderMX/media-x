@@ -23,7 +23,7 @@
     }
 
     .ouw-box {
-        height: 715px;
+        height: 600px;
     }
 
     .wead-box .wead-text {
@@ -65,6 +65,9 @@
 
     .tag-box {
         margin-bottom: 16px;
+    }
+    .wead-box .wead-text{
+        padding: 20px;
     }
 }
 
@@ -286,7 +289,7 @@ gap: 10px;
     }
 
     .ouw-box {
-        height: 580px;
+        height: 530px;
     }
 
     .tes-box .test-content {
