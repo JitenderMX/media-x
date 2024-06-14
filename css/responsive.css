@@ -15,7 +15,10 @@
         --th-h4-fs: calc(32px*.8);
         --th-p-fs: calc(24px*.8);
     }
-
+    .whwedo-box {
+        margin: 20px;
+        position: relative;
+    }
 
 
     .project-box .pro-left {
@@ -390,6 +393,15 @@ gap: 10px;
     .case-study-website {
         padding-bottom: 0px;
     }
+
+    .whwedo-box {
+        margin: 15px !important;
+    }
+    
+    .whwedo-text {
+        padding: 20px;
+        gap: 20px;
+    }
 }
 
 
@@ -405,6 +417,18 @@ gap: 10px;
     .hamburger {
         transform:scale(.8);
     }
+    .whwedo-box {
+        margin: 15px 0px !important;
+    }
+    .whwedo-text {
+        position: relative;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+.whwedo-box:hover .whwedo-text {
+    transform: rotate(0deg) translateY(0px);
+}
     .ouw-box {
         height: 400px;
     }

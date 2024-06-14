@@ -46,7 +46,7 @@ Spacing System
     --th-h2-fs: 64px;
     --th-h3-fs: 48px;
     --th-h4-fs: 32px;
-    --th-p-fs: 24px;
+    --th-p-fs: 20px;
     --th-link-fs: 18px;
 }
 
@@ -196,8 +196,10 @@ main {
     background-color: var(--th-color-1);
     color: var(--th-color-3);
 }
-
-.nav-menu .nm-link {
+.nm-item{
+    padding: 5px;
+}
+.nm-item .nm-link {
     width: 100px;
     text-align: center;
     color: var(--th-color-2);
@@ -207,11 +209,27 @@ main {
     overflow-y: hidden;
     font-weight: 500;
     position: relative;
+    padding-bottom: 10px;
     z-index: 110;
     /* padding: 10px; */
     transition: all .5s;
 }
-
+.nm-item .nm-link::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background-color: var(--th-color-1);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all .5s;
+}
+.nm-item .nm-link:hover:after{
+    width: 100%;
+}
+.nm-item.active .nm-link::after{
+    width: 100%;
+}
 .nm-circle {
     width: 10px;
     height: 10px;
@@ -227,7 +245,7 @@ main {
 .nm-item.active .nm-link {
     color: var(--th-color-1) !important;
 }
-
+/* 
 .nm-item.active:nth-child(1)~.nm-circle {
     left: 50px;
 }
@@ -266,7 +284,7 @@ main {
 
 .nm-item:nth-child(5):hover~.nm-circle {
     left: 450px;
-}
+} */
 
 .nav-menu .nm-link:hover {
     color: var(--th-color-1);
@@ -1818,7 +1836,9 @@ main {
     max-width: 70%;
     text-align: center;
 }
-
+.test-q{
+    max-width: 70px;
+}
 .test-q img {
     width: 100%;
 }
@@ -2526,7 +2546,7 @@ main {
 }
 
 .whwedo-box {
-    margin: 30px;
+    margin: 25px;
     position: relative;
 }
 
@@ -2536,7 +2556,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     background-color: var(--th-color-2);
     border: 1px solid var(--th-color-3);
@@ -2556,10 +2576,12 @@ main {
     font-weight: 400;
     line-height: normal;
     text-transform: none;
+    margin: 0;
 }
 
 .whwedo-text p {
     color: #FFFDF6;
+    margin: 0;
 }
 
 .whwedo-box:hover .whwedo-text {
