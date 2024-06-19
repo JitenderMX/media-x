@@ -446,11 +446,20 @@
     .ouw-box {
         height: 400px;
     }
+    
+    .team-box .col-xl-2.col-md-3.col-sm-4.col-6.my-2.my-sm-4{
+        overflow: hidden;
+    }
 
+    .te-box {
+        height: 100%;
+    }
     .te-text {
         position: relative;
         justify-content: start;
         align-items: start;
+        border:1px solid var(--th-color-3);
+
         text-align: left;
         gap: 5px;
         padding: 10px;
@@ -465,6 +474,7 @@
         background-color: var(--th-color-1);
         border: 1px solid var(--th-color-1);
     }
+
     .ouw-box .ouw-h {
         display: none;
     }
