@@ -51,8 +51,8 @@
         $('.nav-menu-container').toggleClass("active");
     });
     var pageValue = $('body').attr('id');
-    if(pageValue == "contact-page"){
-        $('.nm-circle').addClass('d-none');
+    if(pageValue == "sub-service-page"){
+        pageValue = 'service-page'
     }
     $('[data-page="' + pageValue + '"]').addClass('active');
 </script>
