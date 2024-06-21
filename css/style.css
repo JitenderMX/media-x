@@ -400,7 +400,7 @@ main {
 
 .tag-box .tag {
     padding: 6px 15px;
-    border: 2px solid var(--th-color-2);
+    border: 1px solid var(--th-color-2);
     font-size: var(--th-link-fs);
     font-family: var(--th-font-1);
     background-color: transparent;
@@ -1668,6 +1668,8 @@ main {
 }
 
 .ouw-text {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(85, 85, 85, 0.7) 99%, rgba(205, 205, 205, 0.7) 100%);
+/* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.00) 46.46%); */
     position: absolute;
     bottom:0;
     left: 0;
@@ -1691,7 +1693,7 @@ main {
 .ouw-text p {
     color: var(--th-color-3);
     font-family: var(--th-font-2);
-    font-size: var(--th-h4-fs);
+    font-size: var(--th-p-fs);
     margin: 0;
     font-style: normal;
     font-weight: 500;
@@ -2646,7 +2648,7 @@ main {
 
 .whwedo-box:hover .whwedo-text {
     transform-origin: bottom left;
-    transform: rotate(65deg) translateY(100px);
+    /* transform: rotate(65deg) translateY(100px); */
     transform-origin: left bottom;
     background-color: var(--th-color-1);
     /* border: 1px solid var(--th-color-1); */
