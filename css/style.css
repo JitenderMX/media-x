@@ -293,7 +293,43 @@ main {
 .nav-menu .nm-link:hover {
     color: var(--th-color-1);
 }
+/* .header-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../image/hc-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.header-close .fa-times{
+    font-size: var(--th-h2-fs);
+    cursor: pointer;
+}
+.header-close .social-med .tag{
+font-size: var(--th-h4-fs);
+}
+.header-close .nav-menu-container{
+    border-top: 2px solid var(--th-color-2);
+    border-bottom: 2px solid var(--th-color-2);
+    padding: 60px 0px;
+}
+.header-close .nav-menu ul{
+  display: block;
+  width: 100%;
+}
 
+.header-close .nm-link{
+    width: 100%;
+    color: #767676;
+    font-family: var(--th-font-2);
+    font-size: var(--th-h2-fs);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+} */
 /* ------------- Header Section  End ------------- */
 
 /* 04. Project Hero Section Start ------------------------------ */

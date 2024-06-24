@@ -102,6 +102,72 @@
         display: none;
     }
 
+    .header-close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../image/hc-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        transform: translateX(-100%);
+        transition: all .5s;
+    }
+    .header-close.active{
+        transform: translateX(0%);
+    }
+    .header-close .fa-times {
+        font-size: var(--th-h2-fs);
+        color: #767676;
+        cursor: pointer;
+    }
+
+    .header-close .social-med .tag {
+        font-size: var(--th-h4-fs);
+        padding: 8px 26px;
+        border-radius: 39px;
+    }
+
+    .header-close .nav-menu-container {
+        border-top: 2px solid var(--th-color-2);
+        border-bottom: 2px solid var(--th-color-2);
+        padding: 60px 0px;
+    }
+
+    .header-close .nav-menu ul {
+        display: block;
+        width: 100%;
+    }
+
+    .header-close .nm-link {
+        width: 100%;
+        color: #767676;
+        font-family: var(--th-font-2);
+        font-size: var(--th-h3-fs);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+    }
+    .hamburger {
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 40px;
+        height: 4px;
+        background-color: var(--th-color-2);
+        display: block;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger .line:nth-child(2){
+        position: relative;
+        right: 10px;
+    }
+
+    /* 
     .nav-menu .nm-link {
         width: 100%;
         font-size: 18px;
@@ -124,12 +190,12 @@
 
     .nav-menu {
         display: block;
-    }
+    } */
 
     /* #header.active .nav-menu-container {
         background-color: var(--th-color-2);
     } */
-
+    /* 
     .nav-menu-container {
         position: absolute;
         top: 100%;
@@ -165,8 +231,11 @@
         margin: 8px auto;
         transition: all 0.3s ease-in-out;
     }
-
-    #hamburger-6.is-active {
+    .hamburger .line:nth-child(2){
+        position: relative;
+        right: 10px;
+    } */
+    /* #hamburger-6.is-active {
         transition: all 0.3s ease-in-out;
         transition-delay: 0.6s;
         transform: rotate(45deg);
@@ -187,7 +256,7 @@
 
     #hamburger-6.is-active .line:nth-child(3) {
         transform: translateY(-11px) rotate(90deg);
-    }
+    } */
 
     .nav-menu .nm-link::after {
         height: 0px;
@@ -267,6 +336,7 @@
     .case-visual-identity .cavi-img {
         max-width: 70px;
     }
+
     .ouw-text {
         gap: 15px;
         flex-direction: column-reverse;
@@ -418,19 +488,23 @@
         padding: 20px;
         gap: 20px;
     }
-    .work-box{
+
+    .work-box {
         max-width: 100%;
     }
+
     .work-box:hover .wb-text p {
         height: 90px;
     }
+
     .opening-box .th-arrow-btn {
         opacity: 1;
     }
-    
+
     .opening-box .th-arrow-btn .btn-text {
         color: var(--th-color-2);
     }
+
     .opening-box:hover .th-arrow-btn .btn-text {
         color: var(--th-color-3);
     }
@@ -449,10 +523,15 @@
     .container-xxl {
         padding: 0px 10px !important;
     }
-
-    .hamburger {
-        transform: scale(.8);
+    .header-close .social-med .tag {
+        font-size: var(--th-h4-fs);
+        padding: 8px 20px;
+        border-radius: 39px;
     }
+
+    /* .hamburger {
+        transform: scale(.8);
+    } */
 
     .whwedo-box {
         margin: 15px 0px !important;
@@ -504,7 +583,7 @@
     /* .ouw-box .ouw-h {
         display: none;
     } */
-    
+
 
     .ouw-box .ouw-img img,
     .ouw-box:hover .ouw-img img {
@@ -651,19 +730,24 @@
     .case-study-website .th-arrow-btn:hover .btn-text {
         transform: translateX(50px);
     }
-    section{
+
+    section {
         padding: 50px 0px !important;
     }
-    .ouw-text .ouw-logo img{
+
+    .ouw-text .ouw-logo img {
         max-width: 80px;
         max-height: 80px;
     }
-    .par-img{
+
+    .par-img {
         padding: 10px;
     }
+
     .work-box:hover .wb-text p {
         height: 130px;
     }
+
     .project-tab .pt-btn-box {
         gap: 10px;
     }
