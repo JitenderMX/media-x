@@ -95,6 +95,9 @@ h4 {
 h4 .red {
     color: var(--th-color-1);
 }
+.red {
+    color: var(--th-color-1);
+}
 
 h6 {
     font-family: var(--th-font-1);
@@ -312,7 +315,7 @@ main {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
 .project-tab .pt-btn-box li {
@@ -1001,7 +1004,7 @@ main {
 .ouex-arrow {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 50px;
     display: flex;
     gap: 10px;
 }
@@ -1049,12 +1052,15 @@ main {
     padding: 80px 0px;
 }
 
+.opening-head  {
+    padding: 0px 30px;
+}
 .opening-head h5 {
     color: var(--th-color-5);
     font-size: var(--th-p1);
     font-weight: 700;
     line-height: 130%;
-    text-align: center;
+    /* text-align: center; */
     padding: 10px 0;
 }
 
@@ -2572,6 +2578,9 @@ main {
 .ssh-img-box {
     margin-bottom: 50px;
 }
+.ssh-img-box img{
+    width: 100%;
+}
 
 /* @keyframes moveDown {
     0% {
@@ -2592,7 +2601,7 @@ main {
 }
 
 .ssh-slider {
-    animation: moveDown 50s linear infinite alternate;
+    animation: moveDown 80s linear infinite alternate;
 }
 
 /* ------------- Sub Service Hero Section End ------------- */

@@ -664,4 +664,7 @@
     .work-box:hover .wb-text p {
         height: 130px;
     }
+    .project-tab .pt-btn-box {
+        gap: 10px;
+    }
 }
