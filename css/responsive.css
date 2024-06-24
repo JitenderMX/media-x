@@ -529,6 +529,27 @@
         padding: 0px 10px !important;
     }
 
+    .th-arrow-btn .btn-arrow {
+        max-width: 35px;
+    }
+
+    .th-arrow-btn:hover .btn-arrow {
+        transform: translateX(90px);
+    }
+
+    .th-arrow-btn:hover .btn-text {
+        transform: translateX(-40px);
+    }
+    .our-belifes .th-arrow-btn:hover .btn-arrow {
+        transform: translateX(140px);
+    }
+    .work-with .th-arrow-btn:hover .btn-arrow {
+        transform: translateX(145px);
+    }
+    .project-box .pro-left.pro-type-1, .project-box .pro-left.pro-type-2 {
+        padding: 20px;
+    }
+
     .header-close .social-med .tag {
         font-size: var(--th-h4-fs);
         padding: 8px 20px;
@@ -553,7 +574,7 @@
         gap: 20px;
     }
 
-    .ssh-box {  
+    .ssh-box {
         height: 350px;
     }
 
@@ -761,12 +782,27 @@
     .par-img {
         padding: 10px;
     }
-
+    .work-box{
+        background-color: var(--th-color-2);
+    }
+    .work-box .wb-title{
+        color: var(--th-color-3);
+    }
+    .work-box .wb-text p {
+        height: auto;
+    }
     .work-box:hover .wb-text p {
-        height: 130px;
+        height: auto;
     }
 
     .project-tab .pt-btn-box {
         gap: 10px;
+    }
+    .opening-box {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .opening-box .th-arrow-btn:hover .btn-arrow {
+        transform: translateX(60px);
     }
 }
