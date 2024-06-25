@@ -2205,6 +2205,10 @@ font-size: var(--th-h4-fs);
     position: relative;
     transition: all .5s;
 }
+.oub-box img{
+    max-width: 85px;
+    margin: auto;
+}
 
 .oub-box h5 {
     margin: 0px;

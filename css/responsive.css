@@ -171,7 +171,10 @@
         position: relative;
         right: 10px;
     }
-
+    
+    .hamburger.close {
+        max-width: 25px;
+    }
     /* 
     .nav-menu .nm-link {
         width: 100%;
@@ -552,7 +555,7 @@
 
     .header-close .social-med .tag {
         font-size: var(--th-h4-fs);
-        padding: 8px 20px;
+        padding: 4px 16px;
         border-radius: 39px;
     }
 
@@ -804,5 +807,13 @@
     }
     .opening-box .th-arrow-btn:hover .btn-arrow {
         transform: translateX(60px);
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 2px;
+        margin: 6px auto;
+    }
+    .hamburger .line:nth-child(2) {
+        right: 8px;
     }
 }
