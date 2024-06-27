@@ -1714,18 +1714,16 @@ font-size: var(--th-h4-fs);
 }
 
 .ouw-text {
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(85, 85, 85, 0.7) 99%, rgba(205, 205, 205, 0.7) 100%);
-/* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.00) 46.46%); */
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.6);
+    /* background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(85, 85, 85, 0.7) 99%, rgba(205, 205, 205, 0.7) 100%); */
+    /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.00) 46.46%); */
     position: absolute;
     bottom:0;
     left: 0;
-    /* height: 100%; */
-    padding: 30px;
+    padding: 15px;
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
     align-items: center;
     opacity: 0;
     transition: all .5s;
@@ -1839,7 +1837,13 @@ font-size: var(--th-h4-fs);
     align-items: center;
     /*transition: all .5s;*/
 }
-
+.test-logo{
+    width: 100%;
+    max-width: 200px;
+}
+.test-logo img{
+    width: 100%;
+}
 .tes-box.open {
     width: 60% !important;
 }
@@ -2407,7 +2411,11 @@ font-size: var(--th-h4-fs);
 .case-study-project {
     padding: 80px 0px 40px 0px;
 }
-
+.casw-v-1 img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
 /* ------------- Case Hero Section End ------------- */
 
 

@@ -20,8 +20,15 @@ $(document).ready(function () {
       console.log('Medium device');
     } 
     if (viewportWidth <= 576) {
-      // Code for small devices (576px and down)
-      // console.log('Medium device');
+    $(".we-also-do .row").slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+  })
     } 
   }
 });
