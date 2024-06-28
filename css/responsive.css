@@ -347,7 +347,7 @@
 
     .ouw-text {
         gap: 15px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: start;
     }
 }
@@ -384,9 +384,15 @@
         flex-direction: column;
         padding: 10px;
     }
-
+    #home-page .ous-box{
+        align-items: start;
+        padding: 20px;
+    }
+    .ous-right-btn {
+        opacity: 1;
+    }
     .ouw-box {
-        height: 530px;
+        height: auto;
     }
 
     .tes-box .test-content {
@@ -404,6 +410,17 @@
 
     .ouw-text {
         padding: 18px;
+        position: relative;
+        opacity: 1;
+    }
+    .ouw-text p{
+ color: var(--th-color-2);
+    }
+    
+    .ouw-box .ouw-img img,
+    .ouw-box:hover .ouw-img img {
+        height: 400px;
+        filter: grayscale(0);
     }
 
     .about-hero .abh-marqee-text h1 {
@@ -589,9 +606,7 @@
         transform: rotate(0deg) translateY(0px);
     }
 
-    .ouw-box {
-        height: 400px;
-    }
+   
 
     .team-box .col-xl-2.col-md-3.col-sm-4.col-6.my-2.my-sm-4 {
         overflow: hidden;
@@ -621,26 +636,28 @@
         background-color: var(--th-color-1);
         border: 1px solid var(--th-color-1);
     }
+    .ouw-box .ouw-img img, .ouw-box:hover .ouw-img img{
+        height: 300px;
+    }
 
-    /* .ouw-box .ouw-h {
+    /*  .ouw-box {
+        height: 400px;
+    } 
+    .ouw-box .ouw-h {
         display: none;
     } */
 
 
-    .ouw-box .ouw-img img,
-    .ouw-box:hover .ouw-img img {
-        height: 590px;
-        filter: grayscale(0);
-    }
+   
 
-    .ouw-box .ouw-text {
+    /* .ouw-box .ouw-text {
         opacity: 1;
         padding: 30px 20px;
     }
 
     .ouw-text p {
         margin: 0;
-    }
+    } */
 
     .wead-box .wead-text {
         position: relative;
@@ -777,10 +794,10 @@
         padding: 50px 0px !important;
     }
 
-    .ouw-text .ouw-logo img {
+    /* .ouw-text .ouw-logo img {
         max-width: 80px;
         max-height: 80px;
-    }
+    } */
 
     .par-img {
         padding: 10px;
