@@ -616,6 +616,12 @@
         padding: 15px;
         cursor: pointer;
     }
+    .small-heading .cons-b label {
+        padding: 10px;
+    }
+    .small-heading .cons-b label h5{
+        margin: 0;
+    }
 
     .team-box .col-xl-2.col-md-3.col-sm-4.col-6.my-2.my-sm-4 {
         overflow: hidden;
