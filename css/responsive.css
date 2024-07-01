@@ -575,7 +575,11 @@
         padding: 4px 16px;
         border-radius: 39px;
     }
-
+    .ous-right h2{
+        font-size: var(--th-h4-fs);
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
     /* .hamburger {
         transform: scale(.8);
     } */
