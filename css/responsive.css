@@ -525,6 +525,15 @@
         filter: grayscale(50);
         transition: all .5s;
     }
+    .cons-b-box{
+        padding: 50px 0px;
+    }
+    .cons-b h3{
+        margin-bottom: 15px;
+    }
+    .cons-b p{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -534,6 +543,7 @@
     :root {
         --th-h1-fs: calc(120px*.55);
         --th-h2-fs: calc(48px*.55);
+        --th-h3-fs: calc(32px*.55);
         --th-h4-fs: calc(32px*.6);
     }
 
@@ -602,7 +612,10 @@
         transform: rotate(0deg) translateY(0px);
     }
 
-   
+    .cons-b label {
+        padding: 15px;
+        cursor: pointer;
+    }
 
     .team-box .col-xl-2.col-md-3.col-sm-4.col-6.my-2.my-sm-4 {
         overflow: hidden;
